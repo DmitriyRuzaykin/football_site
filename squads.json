@@ -159,7 +159,7 @@
             "name": "Иванов Константин Русланович",
             "number": 25,
             "position": "НАП",
-            "goals": 0,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -186,7 +186,7 @@
             "name": "Митрофанов Михаил Валерьевич",
             "number": 17,
             "position": "ЛПЗ",
-            "goals": 0,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -284,6 +284,138 @@
         {
             "name": "Иванов Павел Денисович",
             "number": 27,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+        ],
+    "ФК Петьял": [
+        {
+            "name": "Васильев Максим",
+            "number": 10,
+            "position": "ЦЗ",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Власов Максим",
+            "number": 7,
+            "position": "ПЗ",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кувшинов Антон",
+            "number": 9,
+            "position": "НАП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    ],
+    "ФК Приволжск": [
+        {
+            "name": "Влад Толстов",
+            "number": 17,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Белов Артем",
+            "number": 6,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кирилл Иванов",
+            "number": 5,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Матвей",
+            "number": 12,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Никита",
+            "number": 10,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Мокин Артем",
+            "number": 11,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ильин Максим",
+            "number": 2,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Чернов Максим",
+            "number": 22,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Афанасьев Дмитрий",
+            "number": 45,
+            "position": "None",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Романов Артем",
+            "number": 7,
+            "position": "None",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    ],
+    "ФК Карамассы": [
+        {
+            "name": "Кузнецов Егор Сергеевич",
+            "number": 10,
             "position": "НАП",
             "goals": 0,
             "assists": 0,
