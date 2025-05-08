@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 from datetime import datetime
+from collections import defaultdict
 
 st.set_page_config(page_title="Футбол Волжского района 2025", layout="wide")
 
@@ -88,38 +89,93 @@ if page == "Чемпионат":
                     break
 
             if selected_match_data is not None:
-                # Загружаем данные о составах команд
+                # Загружаем данные о составах команд и статистике матчей
                 try:
                     with open('squads.json', 'r', encoding='utf-8') as f:
                         team_squads = json.load(f)
-                except FileNotFoundError:
-                    st.error("Файл squads.json не найден. Статистика по матчу недоступна.")
+                    with open('match_stats.json', 'r', encoding='utf-8') as f:
+                        match_stats = json.load(f)
+                except FileNotFoundError as e:
+                    st.error(f"Файл не найден: {e}. Статистика по матчу недоступна.")
                     team_squads = {}
+                    match_stats = {"matches": []}
 
                 if team_squads:
                     home_team = selected_match_data['Хозяева']
                     away_team = selected_match_data['Гости']
+                    match_date = selected_match_data.get('Дата', 'Неизвестная дата')
+
+                    # Находим статистику для текущего матча
+                    current_match_stats = None
+                    for match in match_stats["matches"]:
+                        if (match["home_team"] == home_team and
+                                match["away_team"] == away_team and
+                                match.get("round") == selected_round):
+                            current_match_stats = match
+                            break
 
                     # Создаем вкладки для разных типов статистики
                     tab1, tab2, tab3 = st.tabs(["Голы", "Жёлтые карточки", "Красные карточки"])
 
                     with tab1:
                         st.markdown(f"### Голы в матче {home_team} - {away_team}")
-                        # Здесь должна быть логика отображения забивших голы
-                        # Примерная реализация (нужно адаптировать под вашу структуру данных)
-                        st.info("Функция отображения авторов голов в разработке. Данные будут браться из базы.")
+                        if current_match_stats and "goals" in current_match_stats and current_match_stats["goals"]:
+                            goals_data = []
+                            for goal in current_match_stats["goals"]:
+                                goals_data.append({
+                                    "Команда": goal["team"],
+                                    "Игрок": goal["player"],
+                                    "Минута": goal["minute"],
+                                    "Ассистент": goal.get("assist", "-")
+                                })
+                            st.dataframe(
+                                pd.DataFrame(goals_data),
+                                use_container_width=True,
+                                hide_index=True
+                            )
+                        else:
+                            st.info("Нет данных о забитых голах в этом матче")
 
                     with tab2:
                         st.markdown(f"### Жёлтые карточки в матче {home_team} - {away_team}")
-                        # Здесь должна быть логика отображения получивших желтые карточки
-                        st.info("Функция отображения желтых карточек в разработке. Данные будут браться из базы.")
+                        if current_match_stats and "yellow_cards" in current_match_stats and current_match_stats[
+                            "yellow_cards"]:
+                            yellow_data = []
+                            for card in current_match_stats["yellow_cards"]:
+                                yellow_data.append({
+                                    "Команда": card["team"],
+                                    "Игрок": card["player"],
+                                    "Минута": card["minute"]
+                                })
+                            st.dataframe(
+                                pd.DataFrame(yellow_data),
+                                use_container_width=True,
+                                hide_index=True
+                            )
+                        else:
+                            st.info("Нет данных о желтых карточках в этом матче")
 
                     with tab3:
                         st.markdown(f"### Красные карточки в матче {home_team} - {away_team}")
-                        # Здесь должна быть логика отображения получивших красные карточки
-                        st.info("Функция отображения красных карточек в разработке. Данные будут браться из базы.")
+                        if current_match_stats and "red_cards" in current_match_stats and current_match_stats[
+                            "red_cards"]:
+                            red_data = []
+                            for card in current_match_stats["red_cards"]:
+                                red_data.append({
+                                    "Команда": card["team"],
+                                    "Игрок": card["player"],
+                                    "Минута": card["minute"]
+                                })
+                            st.dataframe(
+                                pd.DataFrame(red_data),
+                                use_container_width=True,
+                                hide_index=True
+                            )
+                        else:
+                            st.info("Нет данных о красных карточках в этом матче")
+
                 else:
-                    st.warning("Нет данных о составах команд для отображения статистики матча.")
+                    st.warning("Нет данных о составах команд для отображения статистики матча")
     else:
         st.info("Пока нет сыгранных туров.")
 
