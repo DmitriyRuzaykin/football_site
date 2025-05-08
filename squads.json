@@ -111,8 +111,179 @@
     ],
     "ФК Помары": [
         {
-            "name": "Иванов Иван Иванович",
-            "number": 10,
+            "name": "Данлов Андрей Валентинович",
+            "number": 28,
+            "position": "ЛЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ильин Илья Вячеславович",
+            "number": 56,
+            "position": "ЦПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Шашков Артём Вениаминович",
+            "number": 9,
+            "position": "ЛПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Васильев Андрей Витальевич",
+            "number": 71,
+            "position": "ЦПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Степанов Александр Юрьевич",
+            "number": 35,
+            "position": "Вр",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Константин Русланович",
+            "number": 25,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Матуков Данил Олегович",
+            "number": 35,
+            "position": "Вр",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Колениченко Семён Сергеевич",
+            "number": 7,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Митрофанов Михаил Валерьевич",
+            "number": 17,
+            "position": "ЛПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Илья Алексеевич",
+            "number": 66,
+            "position": "ПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Марков Роман Юрьевич",
+            "number": 11,
+            "position": "ППЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Степанов Дмитрий Сергеевич",
+            "number": 14,
+            "position": "ПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Решетников Андрей Валентинович",
+            "number": 8,
+            "position": "ППЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Юрков Игорь Анатольевич",
+            "number": 5,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кузьмин Сергей Вячеславович",
+            "number": 71,
+            "position": "ПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Невский Александр Сергеевич",
+            "number": 19,
+            "position": "ЛПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Борисов Александр Евгеньевич",
+            "number": 15,
+            "position": "ЦПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Белкин Антон Игоревич",
+            "number": 22,
+            "position": "ЛПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Юрков Антон Анатольевич",
+            "number": 21,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Павел Денисович",
+            "number": 27,
             "position": "НАП",
             "goals": 0,
             "assists": 0,
