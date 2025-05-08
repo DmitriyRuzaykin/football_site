@@ -1,0 +1,51 @@
+{
+    "ФК Параты": [
+        {
+            "name": "Смирнов Евгений Сергеевич",
+            "number": 9,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Матвеев Максим Владимирович",
+            "number": 8,
+            "position": "ЦПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ашкельдин Сергей Владимирович",
+            "number": 11,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Рузайкин Дмитрий Борисович",
+            "number": 7,
+            "position": "ЦПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    ],
+    "ФК Помары": [
+        {
+            "name": "Иванов Иван Иванович",
+            "number": 10,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    ]
+}
