@@ -6,7 +6,7 @@ from datetime import datetime
 st.set_page_config(page_title="Футбол Волжского района 2025", layout="wide")
 
 # Боковое меню для выбора страницы
-page = st.sidebar.selectbox("Выберите раздел", ["Чемпионат", "Кубок", "Составы команд"])
+page = st.sidebar.selectbox("Выберите раздел", ["Чемпионат", "Кубок", "Составы команд", "Статистика"])
 
 if page == "Чемпионат":
     col1, col2 = st.columns([1, 8])
@@ -273,3 +273,130 @@ elif page == "Составы команд":
             file_name="squads.json",
             mime="application/json"
         )
+
+elif page == "Статистика":
+    st.title("📊 Статистика игроков")
+
+    # Загрузка данных
+    try:
+        with open('squads.json', 'r', encoding='utf-8') as f:
+            team_squads = json.load(f)
+    except FileNotFoundError:
+        st.error("Файл squads.json не найден")
+        team_squads = {}
+
+    # Собираем всех игроков
+    all_players = []
+    for team, players in team_squads.items():
+        for player in players:
+            player['team'] = team  # Добавляем название команды
+            all_players.append(player)
+
+    if not all_players:
+        st.info("Пока нет статистики по игрокам")
+    else:
+        # Создаем DataFrame
+        df = pd.DataFrame(all_players)
+
+        # Стили для таблиц
+        st.markdown("""
+        <style>
+        .stat-table {
+            margin-bottom: 30px;
+        }
+        .stat-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin: 25px 0 10px 0;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
+        # Таблица бомбардиров
+        st.markdown('<div class="stat-title">🏅 Лучшие бомбардиры</div>', unsafe_allow_html=True)
+        scorers = df[df['goals'] > 0].sort_values('goals', ascending=False)
+        if not scorers.empty:
+            st.dataframe(
+                scorers[['team', 'name', 'position', 'goals']]
+                .rename(columns={
+                    'team': 'Команда',
+                    'name': 'Игрок',
+                    'position': 'Позиция',
+                    'goals': 'Голы'
+                }),
+                column_config={
+                    "Голы": st.column_config.NumberColumn(format="%d")
+                },
+                use_container_width=True,
+                hide_index=True
+            )
+        else:
+            st.info("Нет данных о забитых голах")
+
+        # Таблица желтых карточек
+        st.markdown('<div class="stat-title">🟨 Нарушители (желтые карточки)</div>', unsafe_allow_html=True)
+        yellow_cards = df[df['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
+        if not yellow_cards.empty:
+            st.dataframe(
+                yellow_cards[['team', 'name', 'position', 'yellow_cards']]
+                .rename(columns={
+                    'team': 'Команда',
+                    'name': 'Игрок',
+                    'position': 'Позиция',
+                    'yellow_cards': 'Жёлтые'
+                }),
+                column_config={
+                    "Жёлтые": st.column_config.NumberColumn(format="%d")
+                },
+                use_container_width=True,
+                hide_index=True
+            )
+        else:
+            st.info("Нет данных о желтых карточках")
+
+        # Таблица красных карточек
+        st.markdown('<div class="stat-title">🟥 Агрессивные нарушения (красные карточки)</div>', unsafe_allow_html=True)
+        red_cards = df[df['red_cards'] > 0].sort_values('red_cards', ascending=False)
+        if not red_cards.empty:
+            st.dataframe(
+                red_cards[['team', 'name', 'position', 'red_cards']]
+                .rename(columns={
+                    'team': 'Команда',
+                    'name': 'Игрок',
+                    'position': 'Позиция',
+                    'red_cards': 'Красные'
+                }),
+                column_config={
+                    "Красные": st.column_config.NumberColumn(format="%d")
+                },
+                use_container_width=True,
+                hide_index=True
+            )
+        else:
+            st.info("Нет данных о красных карточках")
+
+        # Кнопки скачивания
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.download_button(
+                label="📥 Голы (CSV)",
+                data=scorers.to_csv(index=False, encoding='utf-8-sig'),
+                file_name="goals_stats.csv",
+                mime="text/csv"
+            )
+        with col2:
+            st.download_button(
+                label="📥 Жёлтые (CSV)",
+                data=yellow_cards.to_csv(index=False, encoding='utf-8-sig'),
+                file_name="yellow_cards_stats.csv",
+                mime="text/csv"
+            )
+        with col3:
+            st.download_button(
+                label="📥 Красные (CSV)",
+                data=red_cards.to_csv(index=False, encoding='utf-8-sig'),
+                file_name="red_cards_stats.csv",
+                mime="text/csv"
+            )
