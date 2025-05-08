@@ -87,47 +87,63 @@ if page == "Чемпионат":
     st.dataframe(df_schedule[df_schedule["Тур"] == selected_schedule_round], use_container_width=True)
 
 elif page == "Кубок":
-    st.title("🏅 Кубок Волжского района по футболу 2025 года")
+    st.title("🏆 Кубок Волжского района по футболу 2025 года")
 
-    # CSS стили для сетки
+    # CSS стили для таблицы
     st.markdown("""
     <style>
-    .cup-match {
-        padding: 8px;
-        margin: 5px 0;
-        border-left: 3px solid #4CAF50;
-        background-color: #f8f9fa;
+    .cup-table {
+        width: 100%;
+        border-collapse: collapse;
     }
-    .cup-stage {
+    .cup-table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .cup-table td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+    .cup-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .winner {
         font-weight: bold;
+        color: #2e7d32;
+    }
+    .stage-header {
+        font-size: 1.2em;
         color: #2c3e50;
-        margin: 15px 0 5px 0;
+        margin: 20px 0 10px 0;
     }
     </style>
     """, unsafe_allow_html=True)
 
-    # Данные матчей кубка
+    # Данные матчей кубка (пример)
     cup_matches = [
         # 1/8 финала
-        {"stage": "1/8 финала", "date": "07.05.2025", "match": "ФК Эмеково – ФК Приволжск"},
-        {"stage": "1/8 финала", "date": "21.05.2025", "match": "ФК Приволжск – ФК Эмеково"},
+        {"stage": "1/8 финала", "date": "07.05.2025", "home": "ФК Эмеково", "away": "ФК Приволжск", "score": "3:0"},
+        {"stage": "1/8 финала", "date": "21.05.2025", "home": "ФК Приволжск", "away": "ФК Эмеково", "score": None},
 
         # 1/4 финала
-        {"stage": "1/4 финала", "date": "04.06.2025", "match": "ФК Помары – ФК Сотнур"},
-        {"stage": "1/4 финала", "date": "18.06.2025", "match": "ФК Сотнур – ФК Помары"},
-        {"stage": "1/4 финала", "date": "04.06.2025", "match": "ФК Параты – ФК Часовенная"},
-        {"stage": "1/4 финала", "date": "18.06.2025", "match": "ФК Часовенная – ФК Параты"},
-        {"stage": "1/4 финала", "date": "04.06.2025", "match": "Поб. Эмеково/Приволжск – ФК Ярамор"},
-        {"stage": "1/4 финала", "date": "18.06.2025", "match": "ФК Ярамор – Поб. Эмеково/Приволжск"},
-        {"stage": "1/4 финала", "date": "04.06.2025", "match": "ФК Петъял – ФК Карамассы"},
-        {"stage": "1/4 финала", "date": "18.06.2025", "match": "ФК Карамассы – ФК Петъял"},
+        {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Помары", "away": "ФК Сотнур", "score": None},
+        {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Сотнур", "away": "ФК Помары", "score": None},
+        {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Параты", "away": "ФК Часовенная", "score": None},
+        {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Часовенная", "away": "ФК Параты", "score": None},
+        {"stage": "1/4 финала", "date": "04.06.2025", "home": "Поб. Эмеково/Приволжск", "away": "ФК Ярамор",
+         "score": None},
+        {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Ярамор", "away": "Поб. Эмеково/Приволжск",
+         "score": None},
 
         # 1/2 финала
-        {"stage": "1/2 финала", "date": "02.07.2025", "match": "? – ?"},
-        {"stage": "1/2 финала", "date": "16.07.2025", "match": "? – ?"},
+        {"stage": "1/2 финала", "date": "02.07.2025", "home": "?", "away": "?", "score": None},
+        {"stage": "1/2 финала", "date": "16.07.2025", "home": "?", "away": "?", "score": None},
 
         # Финал
-        {"stage": "Финал", "date": "30.07.2025", "match": "? – ?"}
+        {"stage": "Финал", "date": "30.07.2025", "home": "?", "away": "?", "score": None}
     ]
 
     # Группировка по этапам
@@ -141,19 +157,36 @@ elif page == "Кубок":
     for match in cup_matches:
         stages[match["stage"]].append(match)
 
-    # Отображение сетки
+    # Отображение таблиц для каждого этапа
     for stage, matches in stages.items():
-        st.markdown(f'<div class="cup-stage">{stage}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="stage-header">{stage}</div>', unsafe_allow_html=True)
 
-        for match in matches:
-            # Форматирование для матчей с известными командами
-            if "?" not in match["match"]:
-                home, away = match["match"].split(" – ")
-                match_text = f"{match['date']}: {home} – {away}"
-            else:
-                match_text = f"{match['date']}: {match['match']}"
+        # Создаем DataFrame для таблицы
+        df = pd.DataFrame(matches)
 
-            st.markdown(f'<div class="cup-match">{match_text}</div>', unsafe_allow_html=True)
+
+        # Форматирование счёта и выделение победителя
+        def format_match(row):
+            if pd.isna(row["score"]):
+                return f"{row['home']} - {row['away']}"
+
+            home_goals, away_goals = map(int, row["score"].split(':'))
+
+            home = f"<span class='winner'>{row['home']}</span>" if home_goals > away_goals else row['home']
+            away = f"<span class='winner'>{row['away']}</span>" if away_goals > home_goals else row['away']
+
+            return f"{home} - {away} <b>({row['score']})</b>"
+
+
+        df["Матч"] = df.apply(format_match, axis=1)
+
+        # Отображаем таблицу
+        st.markdown(
+            df[["date", "Матч"]]
+            .rename(columns={"date": "Дата"})
+            .to_html(escape=False, index=False, classes="cup-table"),
+            unsafe_allow_html=True
+        )
 
 elif page == "Составы команд":
     st.title("👥 Составы команд")
