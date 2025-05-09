@@ -81,6 +81,70 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Ярамор",
+            "date": "03.05.2025",
+            "round": 1,
+            "score": "2:2",
+            "goals": [
+                {
+                    "team": "ФК Сотнур",
+                    "player": null,
+                    "minute": 28,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": null,
+                    "minute": 52,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": null,
+                    "minute": 76,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": null,
+                    "minute": 76,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Часовенная",
+            "date": "03.05.2025",
+            "round": 1,
+            "score": "2:1",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": null,
+                    "minute": 10,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": null,
+                    "minute": 45,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": null,
+                    "minute": 76,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
