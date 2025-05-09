@@ -604,7 +604,7 @@
         },
         {
             "name": "Столяров Денис",
-            "number": null,
+            "number": 98,
             "position": "ПЗ",
             "goals": 0,
             "assists": 0,
@@ -649,7 +649,7 @@
         },
         {
             "name": "Савинов Василий",
-            "number": null,
+            "number": 3,
             "position": "ПЗ",
             "goals": 0,
             "assists": 0,
@@ -675,27 +675,9 @@
             "red_cards": 0
         },
         {
-            "name": "Жирнов",
+            "name": "Жирнов Виталий",
             "number": 54,
             "position": "Вр",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Иванов",
-            "number": 6,
-            "position": "ЗЩ",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Гордеев",
-            "number": 80,
-            "position": "ПЗ",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
