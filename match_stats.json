@@ -145,6 +145,120 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Параты",
+            "date": "10.05.2025",
+            "round": 2,
+            "score": "7:1",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Попов Игорь",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Уткин Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Гаврилов Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кузнецов Егор",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Смирнов Валера",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кабышев Максим",
+                    "minute": 75,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Фёдоров Василий",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Ярамор",
+            "date": "10.05.2025",
+            "round": 2,
+            "score": "0:2",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов",
+                    "minute": 27,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Романов",
+                    "minute": 38,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Майков",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
