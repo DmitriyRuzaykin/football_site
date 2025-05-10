@@ -103,7 +103,7 @@
             "name": "Кабышев Максим Дмитриевич",
             "number": 13,
             "position": "ПЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -345,6 +345,15 @@
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
+        },
+        {
+            "name": "Тарасов Алексей",
+            "number": null,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
         }
     ],
     "ФК Приволжск": [
@@ -498,16 +507,16 @@
             "name": "Семенов Даниил",
             "number": 97,
             "position": "НАП",
-            "goals": 0,
+            "goals": 2,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
             "name": "Кузнецов Егор",
             "number": 99,
             "position": "ПЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -543,7 +552,7 @@
             "name": "Смирнов Валера",
             "number": 88,
             "position": "ЗЩ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -570,7 +579,7 @@
             "name": "Уткин Максим",
             "number": 11,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -599,7 +608,7 @@
             "position": "ПЗ",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -669,7 +678,7 @@
             "name": "Попов Игорь",
             "number": 31,
             "position": "ПЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -714,7 +723,7 @@
             "name": "Гаврилов Роман",
             "number": 30,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -743,7 +752,7 @@
             "name": "Романов",
             "number": 27,
             "position": "ЦЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -752,9 +761,9 @@
             "name": "Харитонов",
             "number": 10,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -790,7 +799,7 @@
             "position": "ЦПЗ",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -962,6 +971,15 @@
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Майков",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         }
     ],
