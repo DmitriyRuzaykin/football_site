@@ -91,25 +91,25 @@
             "goals": [
                 {
                     "team": "ФК Сотнур",
-                    "player": null,
+                    "player": "Савинов Дмитрий",
                     "minute": 28,
                     "assist": null
                 },
                 {
                     "team": "ФК Сотнур",
-                    "player": null,
+                    "player": "Савинов Дмитрий",
                     "minute": 52,
                     "assist": null
                 },
                 {
                     "team": "ФК Ярамор",
-                    "player": null,
+                    "player": "Кошаев",
                     "minute": 76,
                     "assist": null
                 },
                 {
                     "team": "ФК Ярамор",
-                    "player": null,
+                    "player": "Макаров",
                     "minute": 76,
                     "assist": null
                 }
