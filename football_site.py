@@ -26,9 +26,7 @@ if page == "Чемпионат":
     for _, row in matches.iterrows():
         home, away = row["Хозяева"], row["Гости"]
         hg, ag = row["Голы хозяев"], row["Голы гостей"]
-
-        # Пропускаем матчи без результата (NaN или оба 0)
-        if pd.isna(hg) or pd.isna(ag) or (hg == 0 and ag == 0):
+        if hg == 0 and ag == 0 and row["Тур"] != 1:
             continue
         stats[home]["Игры"] += 1
         stats[away]["Игры"] += 1
@@ -67,64 +65,26 @@ if page == "Чемпионат":
     st.dataframe(df, use_container_width=True)
 
     st.subheader("🎯 Результаты матчей")
-    played_matches = matches[
-        (~matches["Голы хозяев"].isna() & ~matches["Голы гостей"].isna()) &
-        ((matches["Голы хозяев"] != 0) | (matches["Голы гостей"] != 0))
-        ]
-
-    played_rounds = sorted(played_matches["Тур"].unique())
-
+    played_rounds = matches[(matches["Голы хозяев"] > 0) | (matches["Голы гостей"] > 0)]["Тур"].unique()
+    played_rounds = sorted(played_rounds)
     if played_rounds:
         selected_round = st.selectbox("Выберите тур", played_rounds)
-
-        # Получаем все матчи выбранного тура
-        round_matches = matches[matches["Тур"] == selected_round].copy()
-
-
-        # Функция для форматирования результата
-        def format_result(row):
-            if pd.isna(row['Голы хозяев']) or pd.isna(row['Голы гостей']):
-                return "Не сыграно"
-            try:
-                return f"{int(row['Голы хозяев'])}:{int(row['Голы гостей'])}"
-            except (ValueError, TypeError):
-                return "Не сыграно"
-
-
-        # Добавляем колонку с отформатированным результатом
-        round_matches["Результат"] = round_matches.apply(format_result, axis=1)
-
-        # Отображаем таблицу
-        st.dataframe(
-            round_matches[["Хозяева", "Гости", "Результат"]],
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "Хозяева": "Хозяева",
-                "Гости": "Гости",
-                "Результат": st.column_config.TextColumn("Результат")
-            }
-        )
+        match_filter = matches[matches["Тур"] == selected_round]
+        st.dataframe(match_filter[["Хозяева", "Гости", "Голы хозяев", "Голы гостей"]], use_container_width=True)
 
         # Добавленная секция: Статистика по матчу
         st.subheader("📊 Статистика матча")
 
-        # Фильтруем только сыгранные матчи в выбранном туре
-        played_in_round = round_matches[
-            (~round_matches["Голы хозяев"].isna()) &
-            (~round_matches["Голы гостей"].isna()) &
-            ((round_matches["Голы хозяев"] != 0) | (round_matches["Голы гостей"] != 0))
-            ]
-
-        if not played_in_round.empty:
-            match_list = [f"{row['Хозяева']} - {row['Гости']} ({int(row['Голы хозяев'])}:{int(row['Голы гостей'])})"
-                          for _, row in played_in_round.iterrows()]
+        # Выбор конкретного матча из выбранного тура
+        if not match_filter.empty:
+            match_list = [f"{row['Хозяева']} - {row['Гости']} ({row['Голы хозяев']}:{row['Голы гостей']})"
+                          for _, row in match_filter.iterrows()]
             selected_match = st.selectbox("Выберите матч для просмотра статистики", match_list)
 
             # Получаем данные выбранного матча
             selected_match_data = None
-            for _, row in played_in_round.iterrows():
-                if f"{row['Хозяева']} - {row['Гости']} ({int(row['Голы хозяев'])}:{int(row['Голы гостей'])})" == selected_match:
+            for _, row in match_filter.iterrows():
+                if f"{row['Хозяева']} - {row['Гости']} ({row['Голы хозяев']}:{row['Голы гостей']})" == selected_match:
                     selected_match_data = row
                     break
 
@@ -213,10 +173,9 @@ if page == "Чемпионат":
                             )
                         else:
                             st.info("Нет данных о красных карточках в этом матче")
+
                 else:
                     st.warning("Нет данных о составах команд для отображения статистики матча")
-        else:
-            st.info("В выбранном туре нет сыгранных матчей для отображения статистики")
     else:
         st.info("Пока нет сыгранных туров.")
 
