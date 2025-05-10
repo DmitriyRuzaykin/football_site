@@ -11,8 +11,8 @@ page = st.sidebar.selectbox("Выберите раздел", ["Чемпиона�
 
 if page == "Чемпионат":
     col1, col2 = st.columns([1, 8])
-    with col1:
-        st.image("volzhsky_flag.jpg", use_container_width=True)
+    # with col1:
+    #     st.image("volzhsky_flag.jpg", use_container_width=True)
     with col1:
         st.title("🏆 Чемпионат Волжского района по футболу 2025 года")
 
