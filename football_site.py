@@ -11,45 +11,29 @@ page = st.sidebar.selectbox("Выберите раздел", ["Чемпиона�
 
 if page == "Чемпионат":
     col1, col2 = st.columns([1, 8])
-    # with col1:
-    #     st.image("volzhsky_flag.jpg", use_container_width=True)
+    with col1:
+        st.image("volzhsky_flag.jpg", use_container_width=True)
     with col1:
         st.title("🏆 Чемпионат Волжского района по футболу 2025 года")
 
-    # Чтение данных с явным указанием кодировки и обработкой пустых значений
-    matches = pd.read_csv("matches.csv", encoding='utf-8-sig', na_values=['', ' '])
-    df_schedule = pd.read_csv("schedule.csv", encoding='utf-8-sig')
-
-    # Явное преобразование типов для числовых колонок
-    matches["Голы хозяев"] = pd.to_numeric(matches["Голы хозяев"], errors='coerce')
-    matches["Голы гостей"] = pd.to_numeric(matches["Голы гостей"], errors='coerce')
+    matches = pd.read_csv("matches.csv")
+    df_schedule = pd.read_csv("schedule.csv")
 
     teams = pd.unique(matches[["Хозяева", "Гости"]].values.ravel())
-    stats = {team: {"Игры": 0, "Победы": 0, "Ничьи": 0, "Поражения": 0,
-                    "Забито": 0, "Пропущено": 0, "Очки": 0} for team in teams}
+    stats = {team: {"Игры": 0, "Победы": 0, "Ничьи": 0, "Поражения": 0, "Забито": 0, "Пропущено": 0, "Очки": 0} for team
+             in teams}
 
     for _, row in matches.iterrows():
         home, away = row["Хозяева"], row["Гости"]
         hg, ag = row["Голы хозяев"], row["Голы гостей"]
-
-        # Пропускаем матчи без результата (NaN)
-        if pd.isna(hg) or pd.isna(ag):
+        if hg == 0 and ag == 0 and row["Тур"] != 1:
             continue
-
-        # Преобразуем в целые числа
-        try:
-            hg = int(hg) if not pd.isna(hg) else 0
-            ag = int(ag) if not pd.isna(ag) else 0
-        except (ValueError, TypeError):
-            continue
-
         stats[home]["Игры"] += 1
         stats[away]["Игры"] += 1
         stats[home]["Забито"] += hg
         stats[home]["Пропущено"] += ag
         stats[away]["Забито"] += ag
         stats[away]["Пропущено"] += hg
-
         if hg > ag:
             stats[home]["Победы"] += 1
             stats[away]["Поражения"] += 1
@@ -64,87 +48,43 @@ if page == "Чемпионат":
             stats[home]["Очки"] += 1
             stats[away]["Очки"] += 1
 
-    # Создаем турнирную таблицу с явным преобразованием типов
     table_data = []
     for team, s in stats.items():
-        table_data.append({
-            "Команда": team,
-            "Игры": int(s["Игры"]),
-            "Победы": int(s["Победы"]),
-            "Ничьи": int(s["Ничьи"]),
-            "Поражения": int(s["Поражения"]),
-            "Забито": int(s["Забито"]),
-            "Пропущено": int(s["Пропущено"]),
-            "Разница мячей": int(s["Забито"]) - int(s["Пропущено"]),
-            "Очки": int(s["Очки"])
-        })
+        s["Разница мячей"] = s["Забито"] - s["Пропущено"]
+        table_data.append({"Команда": team, **s})
 
     df = pd.DataFrame(table_data)
     df = df.sort_values(by=["Очки", "Разница мячей"], ascending=[False, False]).reset_index(drop=True)
     df.insert(0, "№", range(1, len(df) + 1))
-
-    # Упорядочиваем колонки
-    cols = ["№", "Команда", "Игры", "Победы", "Ничьи", "Поражения", "Забито", "Пропущено", "Разница мячей", "Очки"]
+    cols = df.columns.tolist()
+    cols.remove("Очки")
+    cols.append("Очки")
     df = df[cols]
 
     st.subheader("📊 Турнирная таблица")
     st.dataframe(df, use_container_width=True)
 
     st.subheader("🎯 Результаты матчей")
-    played_matches = matches[
-        (~matches["Голы хозяев"].isna() & ~matches["Голы гостей"].isna()) &
-        ((matches["Голы хозяев"] != 0) | (matches["Голы гостей"] != 0))
-        ]
-
-    played_rounds = sorted(played_matches["Тур"].unique())
-
+    played_rounds = matches[(matches["Голы хозяев"] > 0) | (matches["Голы гостей"] > 0)]["Тур"].unique()
+    played_rounds = sorted(played_rounds)
     if played_rounds:
         selected_round = st.selectbox("Выберите тур", played_rounds)
-
-        round_matches = matches[matches["Тур"] == selected_round].copy()
-
-
-        def format_result(row):
-            if pd.isna(row['Голы хозяев']) or pd.isna(row['Голы гостей']):
-                return "Не сыграно"
-            try:
-                return f"{int(row['Голы хозяев'])}:{int(row['Голы гостей'])}"
-            except (ValueError, TypeError):
-                return "Не сыграно"
-
-
-        round_matches["Результат"] = round_matches.apply(format_result, axis=1)
-
-        st.dataframe(
-            round_matches[["Хозяева", "Гости", "Результат"]],
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "Хозяева": "Хозяева",
-                "Гости": "Гости",
-                "Результат": st.column_config.TextColumn("Результат")
-            }
-        )
+        match_filter = matches[matches["Тур"] == selected_round]
+        st.dataframe(match_filter[["Хозяева", "Гости", "Голы хозяев", "Голы гостей"]], use_container_width=True)
 
         # Добавленная секция: Статистика по матчу
         st.subheader("📊 Статистика матча")
 
-        # Фильтруем только сыгранные матчи в выбранном туре
-        played_in_round = round_matches[
-            (~round_matches["Голы хозяев"].isna()) &
-            (~round_matches["Голы гостей"].isna()) &
-            ((round_matches["Голы хозяев"] != 0) | (round_matches["Голы гостей"] != 0))
-            ]
-
-        if not played_in_round.empty:
-            match_list = [f"{row['Хозяева']} - {row['Гости']} ({int(row['Голы хозяев'])}:{int(row['Голы гостей'])})"
-                          for _, row in played_in_round.iterrows()]
+        # Выбор конкретного матча из выбранного тура
+        if not match_filter.empty:
+            match_list = [f"{row['Хозяева']} - {row['Гости']} ({row['Голы хозяев']}:{row['Голы гостей']})"
+                          for _, row in match_filter.iterrows()]
             selected_match = st.selectbox("Выберите матч для просмотра статистики", match_list)
 
             # Получаем данные выбранного матча
             selected_match_data = None
-            for _, row in played_in_round.iterrows():
-                if f"{row['Хозяева']} - {row['Гости']} ({int(row['Голы хозяев'])}:{int(row['Голы гостей'])})" == selected_match:
+            for _, row in match_filter.iterrows():
+                if f"{row['Хозяева']} - {row['Гости']} ({row['Голы хозяев']}:{row['Голы гостей']})" == selected_match:
                     selected_match_data = row
                     break
 
@@ -233,10 +173,9 @@ if page == "Чемпионат":
                             )
                         else:
                             st.info("Нет данных о красных карточках в этом матче")
+
                 else:
                     st.warning("Нет данных о составах команд для отображения статистики матча")
-        else:
-            st.info("В выбранном туре нет сыгранных матчей для отображения статистики")
     else:
         st.info("Пока нет сыгранных туров.")
 
