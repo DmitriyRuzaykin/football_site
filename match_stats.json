@@ -259,6 +259,100 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Часовенная",
+            "date": "10.05.2025",
+            "round": 2,
+            "score": "5:1",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": 10,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": 14,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": 22,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": 34,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Краснов Даниил",
+                    "minute": 45,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": 48,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Юрков Даниил",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Эмеково",
+            "date": "10.05.2025",
+            "round": 2,
+            "score": "1:4",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Корнилов М.",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Романов Н.",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Усков Р.",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Д",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
