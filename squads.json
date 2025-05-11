@@ -186,7 +186,7 @@
             "name": "Иванов Константин Русланович",
             "number": 25,
             "position": "НАП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -213,7 +213,7 @@
             "name": "Митрофанов Михаил Валерьевич",
             "number": 17,
             "position": "ЛПЗ",
-            "goals": 2,
+            "goals": 6,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -305,7 +305,7 @@
             "position": "ЦЗ",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -353,6 +353,55 @@
             "goals": 0,
             "assists": 0,
             "yellow_cards": 1,
+            "red_cards": 0
+        }
+    ],
+    "ФК Эмеково": [
+        {
+            "name": "Корнилов М.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Романов Н.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Усков Р.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Караев Д.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        }
+    ],
+    "ФК Часовенная": [
+        {
+            "name": "Краснов Даниил",
+            "number": null,
+            "position": null,
+            "goals": 2,
+            "assists": 0,
+            "yellow_cards": 0,
             "red_cards": 0
         }
     ],
