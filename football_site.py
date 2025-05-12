@@ -115,7 +115,11 @@ with tab1:  # Чемпионат
     played_rounds = sorted(played_matches["Тур"].unique())
 
     if played_rounds:
-        selected_round = st.selectbox("Выберите тур", played_rounds)
+        selected_round = st.selectbox(
+        "Выберите тур",
+        played_rounds,
+        index=len(played_rounds) - 1
+    )
         round_matches = matches[matches["Тур"] == selected_round].copy()
 
 
@@ -333,24 +337,25 @@ with tab2:  # Кубок
 
     for stage, matches in stages.items():
         st.markdown(f'<div class="stage-header">{stage}</div>', unsafe_allow_html=True)
+
+        # Создаем DataFrame для таблицы
         df = pd.DataFrame(matches)
 
+        # Форматируем столбцы
+        df["Игра"] = df.apply(lambda row: f"{row['home']} - {row['away']}", axis=1)
+        df["Результат"] = df["score"].apply(lambda x: x if pd.notna(x) else "")
 
-        def format_match(row):
-            if pd.isna(row["score"]):
-                return f"{row['home']} - {row['away']}"
-            home_goals, away_goals = map(int, row["score"].split(':'))
-            home = f"<span class='winner'>{row['home']}</span>" if home_goals > away_goals else row['home']
-            away = f"<span class='winner'>{row['away']}</span>" if away_goals > home_goals else row['away']
-            return f"{home} - {away} <b>({row['score']})</b>"
-
-
-        df["Матч"] = df.apply(format_match, axis=1)
-        st.markdown(
-            df[["date", "Матч"]]
-            .rename(columns={"date": "Дата"})
-            .to_html(escape=False, index=False, classes="cup-table"),
-            unsafe_allow_html=True
+        # Отображаем только нужные столбцы
+        st.dataframe(
+            df[["date", "Игра", "Результат"]]
+            .rename(columns={"date": "Дата"}),
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Дата": st.column_config.TextColumn("Дата"),
+                "Игра": st.column_config.TextColumn("Игра"),
+                "Результат": st.column_config.TextColumn("Результат")
+            }
         )
 
 with tab3:  # Составы команд
