@@ -273,37 +273,35 @@ with tab1:  # Чемпионат
     st.dataframe(df_schedule[df_schedule["Тур"] == selected_schedule_round], use_container_width=True)
 
 with tab2:  # Кубок
-    st.title("🏆 Кубок Волжского района по футболу 2025 года")
+    st.title("🥇 Кубок Волжского района по футболу 2025 года")
 
     st.markdown("""
     <style>
-    .cup-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .cup-table th {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-    .cup-table td {
-        padding: 8px;
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-    }
-    .cup-table tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-    .winner {
-        font-weight: bold;
-        color: #2e7d32;
-    }
-    .stage-header {
-        font-size: 1.2em;
-        color: #2c3e50;
-        margin: 20px 0 10px 0;
-    }
+        .cup-header {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff4b4b;
+            padding-bottom: 5px;
+        }
+        .cup-row {
+            font-size: 16px;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        .cup-result {
+            font-weight: bold;
+        }
+        .cup-winner {
+            color: green;
+            font-weight: bold;
+        }
+        .cup-match {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
     """, unsafe_allow_html=True)
 
@@ -314,10 +312,8 @@ with tab2:  # Кубок
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Сотнур", "away": "ФК Помары", "score": None},
         {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Параты", "away": "ФК Часовенная", "score": None},
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Часовенная", "away": "ФК Параты", "score": None},
-        {"stage": "1/4 финала", "date": "04.06.2025", "home": "Поб. Эмеково/Приволжск", "away": "ФК Ярамор",
-         "score": None},
-        {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Ярамор", "away": "Поб. Эмеково/Приволжск",
-         "score": None},
+        {"stage": "1/4 финала", "date": "04.06.2025", "home": "Поб. Эмеково/Приволжск", "away": "ФК Ярамор", "score": None},
+        {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Ярамор", "away": "Поб. Эмеково/Приволжск", "score": None},
         {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Петъял", "away": "ФК Карамассы", "score": None},
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Карамассы", "away": "ФК Петъял", "score": None},
         {"stage": "1/2 финала", "date": "02.07.2025", "home": "?", "away": "?", "score": None},
@@ -327,38 +323,43 @@ with tab2:  # Кубок
         {"stage": "Финал", "date": "30.07.2025", "home": "?", "away": "?", "score": None}
     ]
 
-    stages = {
-        "1/8 финала": [],
-        "1/4 финала": [],
-        "1/2 финала": [],
-        "Финал": []
-    }
+    from collections import defaultdict
+    stages = defaultdict(list)
+    for m in cup_matches:
+        stages[m["stage"]].append(m)
 
-    for match in cup_matches:
-        stages[match["stage"]].append(match)
+    for stage in ["1/8 финала", "1/4 финала", "1/2 финала", "Финал"]:
+        st.markdown(f'<div class="cup-header">{stage}</div>', unsafe_allow_html=True)
+        for m in stages[stage]:
+            date = m["date"]
+            home = m["home"]
+            away = m["away"]
+            score = m["score"]
 
-    for stage, matches in stages.items():
-        st.markdown(f'<div class="stage-header">{stage}</div>', unsafe_allow_html=True)
+            # Форматирование команд и результата
+            if score:
+                try:
+                    hg, ag = map(int, score.split(":"))
+                    if hg > ag:
+                        home = f'<span class="cup-winner">{home}</span>'
+                    elif ag > hg:
+                        away = f'<span class="cup-winner">{away}</span>'
+                except:
+                    pass
+                score_html = f'<span class="cup-result">{score}</span>'
+            else:
+                score_html = ""
 
-        # Создаем DataFrame для таблицы
-        df = pd.DataFrame(matches)
-
-        # Форматируем столбцы
-        df["Игра"] = df.apply(lambda row: f"{row['home']} - {row['away']}", axis=1)
-        df["Результат"] = df["score"].apply(lambda x: x if pd.notna(x) else "")
-
-        # Отображаем только нужные столбцы
-        st.dataframe(
-            df[["date", "Игра", "Результат"]]
-            .rename(columns={"date": "Дата"}),
-            use_container_width=True,
-            hide_index=True,
-            column_config={
-                "Дата": st.column_config.TextColumn("Дата"),
-                "Игра": st.column_config.TextColumn("Игра"),
-                "Результат": st.column_config.TextColumn("Результат")
-            }
-        )
+            st.markdown(
+                f'''
+                <div class="cup-row cup-match">
+                    <div>{date}</div>
+                    <div>{home} – {away}</div>
+                    <div>{score_html}</div>
+                </div>
+                ''',
+                unsafe_allow_html=True
+            )
 
 with tab3:  # Составы команд
     st.title("👥 Составы команд")
