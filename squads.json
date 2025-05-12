@@ -392,6 +392,24 @@
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
+        },
+        {
+            "name": "Прокопьев П.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Романов Ю.",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
         }
     ],
     "ФК Часовенная": [
@@ -1199,7 +1217,7 @@
         "name": "Мшаров Стас",
         "number": 7,
         "position": "НАП",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellow_cards": 0,
         "red_cards": 0

@@ -126,19 +126,19 @@
             "goals": [
                 {
                     "team": "ФК Эмеково",
-                    "player": null,
+                    "player": "Прокопьев П.",
                     "minute": 10,
                     "assist": null
                 },
                 {
                     "team": "ФК Часовенная",
-                    "player": null,
+                    "player": "Краснов Даниил",
                     "minute": 45,
                     "assist": null
                 },
                 {
                     "team": "ФК Эмеково",
-                    "player": null,
+                    "player": "Романов Ю.",
                     "minute": 76,
                     "assist": null
                 }
@@ -307,7 +307,7 @@
             "yellow_cards": [
                 {
                     "team": "ФК Помары",
-                    "player": "Юрков Даниил",
+                    "player": "Юрков Антон Анатольевич",
                     "minute": null
                 }
             ],
@@ -346,7 +346,7 @@
                 },
                 {
                     "team": "ФК Сотнур",
-                    "player": null,
+                    "player": "Мшаров Стас",
                     "minute": null,
                     "assist": null
                 }
