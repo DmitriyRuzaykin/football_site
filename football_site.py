@@ -6,21 +6,41 @@ from collections import defaultdict
 
 st.set_page_config(page_title="Футбол Волжского района 2025", layout="wide")
 
-# Боковое меню для выбора страницы
-page = st.sidebar.selectbox("Выберите раздел", ["Чемпионат", "Кубок", "Составы команд", "Статистика"])
+st.markdown(
+    '''
+    <style>
+        .stTabs [data-baseweb="tab"] {
+            background-color: #f0f2f6;
+            padding: 10px 20px;
+            margin-right: 5px;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid #ccc;
+            font-weight: 500;
+        }
+        .stTabs [aria-selected="true"] {
+            background-color: #ffffff;
+            border-bottom: 2px solid #ff4b4b;
+            color: black;
+        }
+    </style>
+    ''',
+    unsafe_allow_html=True
+)
 
-if page == "Чемпионат":
+
+# Верхнее меню для выбора страницы
+tab1, tab2, tab3, tab4 = st.tabs(["Чемпионат", "Кубок", "Составы команд", "Статистика"])
+
+with tab1:  # Чемпионат
     col1, col2 = st.columns([1, 8])
-    # with col1:
-    #     st.image("volzhsky_flag.jpg", use_container_width=True)
     with col2:
         st.title("🏆 Чемпионат Волжского района по футболу 2025 года")
 
-    # Чтение данных с явным указанием кодировки и обработкой пустых значений
+    # Чтение данных
     matches = pd.read_csv("matches.csv", encoding='utf-8-sig', na_values=['', ' '])
     df_schedule = pd.read_csv("schedule.csv", encoding='utf-8-sig')
 
-    # Явное преобразование типов для числовых колонок
+    # Обработка данных и турнирная таблица (остается без изменений)
     matches["Голы хозяев"] = pd.to_numeric(matches["Голы хозяев"], errors='coerce')
     matches["Голы гостей"] = pd.to_numeric(matches["Голы гостей"], errors='coerce')
 
@@ -32,11 +52,9 @@ if page == "Чемпионат":
         home, away = row["Хозяева"], row["Гости"]
         hg, ag = row["Голы хозяев"], row["Голы гостей"]
 
-        # Пропускаем матчи без результата (NaN)
         if pd.isna(hg) or pd.isna(ag):
             continue
 
-        # Преобразуем в целые числа
         try:
             hg = int(hg) if not pd.isna(hg) else 0
             ag = int(ag) if not pd.isna(ag) else 0
@@ -64,7 +82,6 @@ if page == "Чемпионат":
             stats[home]["Очки"] += 1
             stats[away]["Очки"] += 1
 
-    # Создаем турнирную таблицу с явным преобразованием типов
     table_data = []
     for team, s in stats.items():
         table_data.append({
@@ -83,7 +100,6 @@ if page == "Чемпионат":
     df = df.sort_values(by=["Очки", "Разница мячей"], ascending=[False, False]).reset_index(drop=True)
     df.insert(0, "№", range(1, len(df) + 1))
 
-    # Упорядочиваем колонки
     cols = ["№", "Команда", "Игры", "Победы", "Ничьи", "Поражения", "Забито", "Пропущено", "Разница мячей", "Очки"]
     df = df[cols]
 
@@ -100,7 +116,6 @@ if page == "Чемпионат":
 
     if played_rounds:
         selected_round = st.selectbox("Выберите тур", played_rounds)
-
         round_matches = matches[matches["Тур"] == selected_round].copy()
 
 
@@ -126,7 +141,7 @@ if page == "Чемпионат":
             }
         )
 
-        # Добавленная секция: Статистика по матчу
+        # Добавленная секция: Статистика по матчу (этот блок был пропущен)
         st.subheader("📊 Статистика матча")
 
         # Фильтруем только сыгранные матчи в выбранном туре
@@ -175,9 +190,9 @@ if page == "Чемпионат":
                             break
 
                     # Создаем вкладки для разных типов статистики
-                    tab1, tab2, tab3 = st.tabs(["Голы", "Жёлтые карточки", "Красные карточки"])
+                    tab_goals, tab_yellow, tab_red = st.tabs(["Голы", "Жёлтые карточки", "Красные карточки"])
 
-                    with tab1:
+                    with tab_goals:
                         st.markdown(f"### Голы в матче {home_team} - {away_team}")
                         if current_match_stats and "goals" in current_match_stats and current_match_stats["goals"]:
                             goals_data = []
@@ -196,7 +211,7 @@ if page == "Чемпионат":
                         else:
                             st.info("Нет данных о забитых голах в этом матче")
 
-                    with tab2:
+                    with tab_yellow:
                         st.markdown(f"### Жёлтые карточки в матче {home_team} - {away_team}")
                         if current_match_stats and "yellow_cards" in current_match_stats and current_match_stats[
                             "yellow_cards"]:
@@ -215,7 +230,7 @@ if page == "Чемпионат":
                         else:
                             st.info("Нет данных о желтых карточках в этом матче")
 
-                    with tab3:
+                    with tab_red:
                         st.markdown(f"### Красные карточки в матче {home_team} - {away_team}")
                         if current_match_stats and "red_cards" in current_match_stats and current_match_stats[
                             "red_cards"]:
@@ -237,10 +252,8 @@ if page == "Чемпионат":
                     st.warning("Нет данных о составах команд для отображения статистики матча")
         else:
             st.info("В выбранном туре нет сыгранных матчей для отображения статистики")
-    else:
-        st.info("Пока нет сыгранных туров.")
 
-    st.subheader("🗓 Расписание матчей (по турам)")
+    st.subheader("🗓 Календарь игр (по турам)")
     df_schedule["Дата"] = pd.to_datetime(df_schedule["Дата"].astype(str) + ".2025", format="%d.%m.%Y", errors="coerce")
     df_schedule["Дата"] = df_schedule["Дата"].dt.strftime("%d.%m.%Y")
     today = pd.to_datetime(datetime.now().date())
@@ -248,17 +261,16 @@ if page == "Чемпионат":
     default_round = df_schedule.loc[future_rounds >= today, "Тур"].min() if not future_rounds.empty else df_schedule[
         "Тур"].max()
     selected_schedule_round = st.selectbox(
-        "Выберите тур для просмотра расписания",
+        "Выберите тур для просмотра календаря",
         sorted(df_schedule["Тур"].unique()),
         index=list(sorted(df_schedule["Тур"].unique())).index(default_round),
         key="schedule"
     )
     st.dataframe(df_schedule[df_schedule["Тур"] == selected_schedule_round], use_container_width=True)
 
-elif page == "Кубок":
+with tab2:  # Кубок
     st.title("🏆 Кубок Волжского района по футболу 2025 года")
 
-    # CSS стили для таблицы
     st.markdown("""
     <style>
     .cup-table {
@@ -291,13 +303,9 @@ elif page == "Кубок":
     </style>
     """, unsafe_allow_html=True)
 
-    # Данные матчей кубка (пример)
     cup_matches = [
-        # 1/8 финала
         {"stage": "1/8 финала", "date": "07.05.2025", "home": "ФК Эмеково", "away": "ФК Приволжск", "score": "3:0"},
         {"stage": "1/8 финала", "date": "21.05.2025", "home": "ФК Приволжск", "away": "ФК Эмеково", "score": None},
-
-        # 1/4 финала
         {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Помары", "away": "ФК Сотнур", "score": None},
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Сотнур", "away": "ФК Помары", "score": None},
         {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Параты", "away": "ФК Часовенная", "score": None},
@@ -308,16 +316,11 @@ elif page == "Кубок":
          "score": None},
         {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Петъял", "away": "ФК Карамассы", "score": None},
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Карамассы", "away": "ФК Петъял", "score": None},
-
-        # 1/2 финала
         {"stage": "1/2 финала", "date": "02.07.2025", "home": "?", "away": "?", "score": None},
         {"stage": "1/2 финала", "date": "16.07.2025", "home": "?", "away": "?", "score": None},
-
-        # Финал
         {"stage": "Финал", "date": "30.07.2025", "home": "?", "away": "?", "score": None}
     ]
 
-    # Группировка по этапам
     stages = {
         "1/8 финала": [],
         "1/4 финала": [],
@@ -328,30 +331,21 @@ elif page == "Кубок":
     for match in cup_matches:
         stages[match["stage"]].append(match)
 
-    # Отображение таблиц для каждого этапа
     for stage, matches in stages.items():
         st.markdown(f'<div class="stage-header">{stage}</div>', unsafe_allow_html=True)
-
-        # Создаем DataFrame для таблицы
         df = pd.DataFrame(matches)
 
 
-        # Форматирование счёта и выделение победителя
         def format_match(row):
             if pd.isna(row["score"]):
                 return f"{row['home']} - {row['away']}"
-
             home_goals, away_goals = map(int, row["score"].split(':'))
-
             home = f"<span class='winner'>{row['home']}</span>" if home_goals > away_goals else row['home']
             away = f"<span class='winner'>{row['away']}</span>" if away_goals > home_goals else row['away']
-
             return f"{home} - {away} <b>({row['score']})</b>"
 
 
         df["Матч"] = df.apply(format_match, axis=1)
-
-        # Отображаем таблицу
         st.markdown(
             df[["date", "Матч"]]
             .rename(columns={"date": "Дата"})
@@ -359,7 +353,7 @@ elif page == "Кубок":
             unsafe_allow_html=True
         )
 
-elif page == "Составы команд":
+with tab3:  # Составы команд
     st.title("👥 Составы команд")
 
     # CSS стили (упрощённые)
@@ -439,7 +433,7 @@ elif page == "Составы команд":
             mime="application/json"
         )
 
-elif page == "Статистика":
+with tab4:  # Статистика
     st.title("📊 Статистика игроков")
 
     # Загрузка данных
