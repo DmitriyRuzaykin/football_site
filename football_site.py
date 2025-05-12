@@ -322,6 +322,8 @@ with tab2:  # Кубок
         {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Карамассы", "away": "ФК Петъял", "score": None},
         {"stage": "1/2 финала", "date": "02.07.2025", "home": "?", "away": "?", "score": None},
         {"stage": "1/2 финала", "date": "16.07.2025", "home": "?", "away": "?", "score": None},
+        {"stage": "1/2 финала", "date": "02.07.2025", "home": "?", "away": "?", "score": None},
+        {"stage": "1/2 финала", "date": "16.07.2025", "home": "?", "away": "?", "score": None},
         {"stage": "Финал", "date": "30.07.2025", "home": "?", "away": "?", "score": None}
     ]
 
