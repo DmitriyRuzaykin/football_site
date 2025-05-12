@@ -484,11 +484,10 @@ elif page == "Статистика":
         scorers = df[df['goals'] > 0].sort_values('goals', ascending=False)
         if not scorers.empty:
             st.dataframe(
-                scorers[['team', 'name', 'position', 'goals']]
+                scorers[['name', 'team', 'goals']]
                 .rename(columns={
-                    'team': 'Команда',
                     'name': 'Игрок',
-                    'position': 'Позиция',
+                    'team': 'Команда',
                     'goals': 'Голы'
                 }),
                 column_config={
@@ -501,7 +500,7 @@ elif page == "Статистика":
             st.info("Нет данных о забитых голах")
 
         # Таблица желтых карточек
-        st.markdown('<div class="stat-title">🟨 Нарушители (желтые карточки)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="stat-title">🟨 Желтые карточки</div>', unsafe_allow_html=True)
         yellow_cards = df[df['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
         if not yellow_cards.empty:
             st.dataframe(
@@ -522,7 +521,7 @@ elif page == "Статистика":
             st.info("Нет данных о желтых карточках")
 
         # Таблица красных карточек
-        st.markdown('<div class="stat-title">🟥 Агрессивные нарушения (красные карточки)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="stat-title">🟥 Красные карточки</div>', unsafe_allow_html=True)
         red_cards = df[df['red_cards'] > 0].sort_values('red_cards', ascending=False)
         if not red_cards.empty:
             st.dataframe(
