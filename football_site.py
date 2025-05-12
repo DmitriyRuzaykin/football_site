@@ -403,12 +403,9 @@ elif page == "Составы команд":
         # Создаем DataFrame
         df = pd.DataFrame(players)
 
-        # Добавляем колонку с фото (заглушки)
-        df['Фото'] = "👤"
-
-        # Отображаем таблицу с отдельными столбцами для карточек
+        # Отображаем таблицу без столбца с фото
         st.dataframe(
-            df[['Фото', 'name', 'number', 'position', 'goals', 'assists', 'yellow_cards', 'red_cards']]
+            df[['name', 'number', 'position', 'goals', 'assists', 'yellow_cards', 'red_cards']]
             .rename(columns={
                 'name': 'Игрок',
                 'number': 'Номер',
@@ -419,7 +416,6 @@ elif page == "Составы команд":
                 'red_cards': 'Красные'
             }),
             column_config={
-                "Фото": st.column_config.TextColumn("Фото"),
                 "Голы": st.column_config.NumberColumn(format="%d"),
                 "Передачи": st.column_config.NumberColumn(format="%d"),
                 "Жёлтые": st.column_config.NumberColumn(format="%d"),
