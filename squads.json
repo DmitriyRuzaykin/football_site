@@ -12,7 +12,7 @@
         {
             "name": "Матвеев Максим",
             "number": 8,
-            "position": "ЦПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -30,7 +30,7 @@
         {
             "name": "Рузайкин Дмитрий",
             "number": 7,
-            "position": "ЦПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -48,7 +48,7 @@
         {
             "name": "Николаев Захар",
             "number": 52,
-            "position": "ПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -66,7 +66,7 @@
         {
             "name": "Ильин Станислав",
             "number": 47,
-            "position": "ЛПЗ",
+            "position": "ЛП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -93,7 +93,7 @@
         {
             "name": "Кудрявцев Антон",
             "number": 21,
-            "position": "ППЗ",
+            "position": "ПП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -149,7 +149,7 @@
         {
             "name": "Ильин Илья",
             "number": 56,
-            "position": "ЦПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -158,7 +158,7 @@
         {
             "name": "Шашков Артём",
             "number": 9,
-            "position": "ЛПЗ",
+            "position": "ЛП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -167,7 +167,7 @@
         {
             "name": "Васильев Андрей",
             "number": 71,
-            "position": "ЦПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -212,7 +212,7 @@
         {
             "name": "Митрофанов Михаил",
             "number": 17,
-            "position": "ЛПЗ",
+            "position": "ЛП",
             "goals": 6,
             "assists": 0,
             "yellow_cards": 0,
@@ -230,7 +230,7 @@
         {
             "name": "Марков Роман",
             "number": 11,
-            "position": "ППЗ",
+            "position": "ПП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -248,7 +248,7 @@
         {
             "name": "Решетников Андрей",
             "number": 8,
-            "position": "ППЗ",
+            "position": "ПП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -275,7 +275,7 @@
         {
             "name": "Невский Александр",
             "number": 19,
-            "position": "ЛПЗ",
+            "position": "ЛП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -284,7 +284,7 @@
         {
             "name": "Борисов Александр",
             "number": 15,
-            "position": "ЦПЗ",
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -293,7 +293,7 @@
         {
             "name": "Белкин Антон",
             "number": 22,
-            "position": "ЛПЗ",
+            "position": "ЛП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -612,160 +612,248 @@
     ],
     "ФК Часовенная": [
         {
+            "name": "Шабалин Артур",
+            "number": 8,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ефремов Константин",
+            "number": 96,
+            "position": "ЛП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
             "name": "Краснов Даниил",
-            "number": null,
-            "position": null,
+            "number": 80,
+            "position": "ЦП",
             "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
+        },
+        {
+            "name": "Охотин Юрий",
+            "number": 9,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Миронов Максим",
+            "number": 24,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Семенов Игорь",
+            "number": 15,
+            "position": "Вр",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Семенов Роман",
+            "number": 21,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Бычков Руслан",
+            "number": 26,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Бычков Дмитрий",
+            "number": 20,
+            "position": "ПП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Журавлев Андрей",
+            "number": 5,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Абдуллин Марсель",
+            "number": 23,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Строганов Никита",
+            "number": 16,
+            "position": "ПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Малышкин Алексей",
+            "number": 25,
+            "position": "ЛЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Парамонов Никита",
+            "number": 7,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Петров Сергей",
+            "number": 22,
+            "position": "ПЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Николай",
+            "number": 10,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ахвледиани Давид",
+            "number": 20,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Строганов Роман",
+            "number": 7,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Шамсутдинов Дамир",
+            "number": 88,
+            "position": "ЛЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Михайлов Максим",
+            "number": 11,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Пустоселов Максим",
+            "number": 99,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Прокопьев Данил",
+            "number": 17,
+            "position": "ПП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Алексеев Алексей",
+            "number": 4,
+            "position": "ЛЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Шевелев Максим",
+            "number": 95,
+            "position": "ПП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Акозин Данил",
+            "number": 66,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Алексеев Илья",
+            "number": 2,
+            "position": "Вр",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Серегин Данил",
+            "number": 18,
+            "position": "ПП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
         }
-    ],
-    "ФК Приволжск": [
-    {
-        "name": "Афанасьев Дмитрий",
-        "number": 45,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Иванов Матвей",
-        "number": 12,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Белов Артем",
-        "number": 6,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Иванов Кирилл",
-        "number": 5,
-        "position": "НАП",
-        "goals": 1,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Ильин Максим",
-        "number": 2,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Смирнов Серафим",
-        "number": 18,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Иванов Никита",
-        "number": 10,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Степанов Степан",
-        "number": 1,
-        "position": "Вр",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Ялтаев Михаил",
-        "number": 8,
-        "position": "НАП",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Архипов Дмитрий",
-        "number": 19,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Толстов Владислав",
-        "number": 17,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Кузьмин Никита",
-        "number": 21,
-        "position": "ЗЩ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Романов Артем",
-        "number": 7,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Мокин Артём",
-        "number": 13,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Яковлев Александр",
-        "number": 37,
-        "position": "Вр",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    },
-    {
-        "name": "Миловидов Артур",
-        "number": 23,
-        "position": "ПЗ",
-        "goals": 0,
-        "assists": 0,
-        "yellow_cards": 0,
-        "red_cards": 0
-    }
     ],
     "ФК Карамассы": [
         {
