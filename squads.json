@@ -1102,21 +1102,48 @@
     ],
        "ФК Ярамор": [
         {
+            "name": "Иванов",
+            "number": 1,
+            "position": "Врт",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Григорьев",
+            "number": 66,
+            "position": "Врт",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Васильев",
+            "number": 88,
+            "position": "Врт",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Исаев",
+            "number": 18,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
             "name": "Романов",
             "number": 27,
             "position": "ЦЗ",
             "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Харитонов",
-            "number": 10,
-            "position": "НАП",
-            "goals": 1,
-            "assists": 0,
-            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1129,45 +1156,9 @@
             "red_cards": 0
         },
         {
-            "name": "Котелов В",
-            "number": 69,
-            "position": "ЦП",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Атлашкин",
-            "number": 8,
-            "position": "ЦОП",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Кошаев",
-            "number": 77,
-            "position": "ЦП",
-            "goals": 1,
-            "assists": 0,
-            "yellow_cards": 1,
-            "red_cards": 0
-        },
-        {
-            "name": "Иванов",
-            "number": 1,
-            "position": "Врт",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Кажаев",
-            "number": 99,
-            "position": "ЦП",
+            "name": "Богданов",
+            "number": 21,
+            "position": "ЛЗ",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -1183,27 +1174,45 @@
             "red_cards": 0
         },
         {
-            "name": "Иванов А",
-            "number": 21,
-            "position": "НАП",
+            "name": "Тимофеев И",
+            "number": 4,
+            "position": "ПЗ",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Жирнов",
-            "number": 7,
-            "position": "НАП",
+            "name": "Атлашкин",
+            "number": 8,
+            "position": "ЦОП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Котелов Д",
-            "number": 52,
-            "position": "НАП",
+            "name": "Котелов В",
+            "number": 69,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кошаев",
+            "number": 77,
+            "position": "ЦП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        {
+            "name": "Кажаев",
+            "number": 99,
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -1219,33 +1228,6 @@
             "red_cards": 0
         },
         {
-            "name": "Федотов",
-            "number": 30,
-            "position": "НАП",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Макаров",
-            "number": 97,
-            "position": "НАП",
-            "goals": 1,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Егоров",
-            "number": 15,
-            "position": "ЛП",
-            "goals": 0,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
             "name": "Зайков",
             "number": 37,
             "position": "ПП",
@@ -1255,9 +1237,9 @@
             "red_cards": 0
         },
         {
-            "name": "Тимофеев И",
-            "number": 4,
-            "position": "ПЗ",
+            "name": "Егоров",
+            "number": 15,
+            "position": "ЛП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
@@ -1291,36 +1273,54 @@
             "red_cards": 0
         },
         {
-            "name": "Васильев",
-            "number": 88,
-            "position": "Врт",
+            "name": "Федотов",
+            "number": 30,
+            "position": "НАП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Исаев",
-            "number": 18,
-            "position": "ЦЗ",
-            "goals": 0,
+            "name": "Макаров",
+            "number": 97,
+            "position": "НАП",
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Богданов",
+            "name": "Харитонов",
+            "number": 10,
+            "position": "НАП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов А",
             "number": 21,
-            "position": "ЛЗ",
+            "position": "НАП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Григорьев",
-            "number": 66,
-            "position": "Врт",
+            "name": "Жирнов",
+            "number": 7,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Котелов Д",
+            "number": 52,
+            "position": "НАП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
