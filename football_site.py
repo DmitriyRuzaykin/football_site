@@ -506,11 +506,10 @@ with tab4:  # Статистика
         yellow_cards = df[df['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
         if not yellow_cards.empty:
             st.dataframe(
-                yellow_cards[['team', 'name', 'position', 'yellow_cards']]
+                yellow_cards[['name', 'team', 'yellow_cards']]
                 .rename(columns={
-                    'team': 'Команда',
                     'name': 'Игрок',
-                    'position': 'Позиция',
+                    'team': 'Команда',
                     'yellow_cards': 'Жёлтые'
                 }),
                 column_config={
@@ -527,11 +526,10 @@ with tab4:  # Статистика
         red_cards = df[df['red_cards'] > 0].sort_values('red_cards', ascending=False)
         if not red_cards.empty:
             st.dataframe(
-                red_cards[['team', 'name', 'position', 'red_cards']]
+                red_cards[['name', 'team', 'red_cards']]
                 .rename(columns={
-                    'team': 'Команда',
                     'name': 'Игрок',
-                    'position': 'Позиция',
+                    'team': 'Команда',
                     'red_cards': 'Красные'
                 }),
                 column_config={
