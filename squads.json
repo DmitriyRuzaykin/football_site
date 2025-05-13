@@ -1367,7 +1367,7 @@
     {
         "name": "Евдокимов Илья",
         "number": 17,
-        "position": "ЗЩ",
+        "position": "ЦЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1376,7 +1376,7 @@
     {
         "name": "Морозов Евгений",
         "number": 6,
-        "position": "ЗЩ",
+        "position": "ЛЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1385,7 +1385,7 @@
     {
         "name": "Чеблуков Владик",
         "number": 4,
-        "position": "ЗЩ",
+        "position": "ЛЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1394,7 +1394,7 @@
     {
         "name": "Яковлев Константин",
         "number": 3,
-        "position": "ЗЩ",
+        "position": "ПЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1403,7 +1403,7 @@
     {
         "name": "Васильев Алексей",
         "number": 5,
-        "position": "ЗЩ",
+        "position": "ЦЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1412,7 +1412,7 @@
     {
         "name": "Васильев Константин",
         "number": 8,
-        "position": "ЗЩ",
+        "position": "ПЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1421,7 +1421,7 @@
     {
         "name": "Белов Стас",
         "number": 16,
-        "position": "ЗЩ",
+        "position": "ЦЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1430,7 +1430,7 @@
     {
         "name": "Петров Владимир",
         "number": 97,
-        "position": "ЗЩ",
+        "position": "ЦЗ",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1439,7 +1439,7 @@
     {
         "name": "Окашев Илья",
         "number": 23,
-        "position": "ПЗ",
+        "position": "ПП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1448,7 +1448,7 @@
     {
         "name": "Мшаров Дмитрий",
         "number": 13,
-        "position": "ПЗ",
+        "position": "ЦП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1457,7 +1457,7 @@
     {
         "name": "Михайлов Ростислав",
         "number": 12,
-        "position": "ПЗ",
+        "position": "ЦП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1466,7 +1466,7 @@
     {
         "name": "Шишков Арсений",
         "number": 14,
-        "position": "ПЗ",
+        "position": "ПП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1475,7 +1475,7 @@
     {
         "name": "Владимиров Александр",
         "number": 9,
-        "position": "ПЗ",
+        "position": "ЛП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1484,7 +1484,7 @@
     {
         "name": "Яковлев Дмитрий",
         "number": 15,
-        "position": "ПЗ",
+        "position": "ПП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -1493,7 +1493,7 @@
     {
         "name": "Васильев Владимир",
         "number": 18,
-        "position": "ПЗ",
+        "position": "ЛП",
         "goals": 0,
         "assists": 0,
         "yellow_cards": 0,
