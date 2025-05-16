@@ -29,7 +29,7 @@ st.markdown(
 
 
 # Верхнее меню для выбора страницы
-tab1, tab2, tab3, tab4 = st.tabs(["Чемпионат", "Кубок", "Составы команд", "Статистика"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Чемпионат", "Кубок", "Составы команд", "Статистика", "Анонс тура"])
 
 with tab1:  # Чемпионат
     col1, col2 = st.columns([1, 8])
@@ -564,3 +564,105 @@ with tab4:  # Статистика
                 file_name="red_cards_stats.csv",
                 mime="text/csv"
             )
+
+    def pluralize_ochko(n):
+        n = abs(int(n))
+        if 11 <= n % 100 <= 14:
+            return "очков"
+        elif n % 10 == 1:
+            return "очко"
+        elif 2 <= n % 10 <= 4:
+            return "очка"
+        else:
+            return "очков"
+
+    with tab5:  # Анонс тура
+        st.title("📣 Анонс следующего тура")
+
+        try:
+            matches = pd.read_csv("matches.csv", encoding='utf-8-sig')
+            schedule = pd.read_csv("schedule.csv", encoding='utf-8-sig')
+            with open("squads.json", 'r', encoding='utf-8') as f:
+                squads = json.load(f)
+        except Exception as e:
+            st.error(f"Ошибка загрузки данных: {e}")
+            st.stop()
+
+        # Очистка и преобразование
+        schedule["Дата"] = pd.to_datetime(schedule["Дата"].astype(str) + ".2025", format="%d.%m.%Y", errors="coerce")
+        today = pd.to_datetime(datetime.now().date())
+        future_schedule = schedule[schedule["Дата"] >= today].sort_values("Дата")
+
+        if future_schedule.empty:
+            st.info("Все туры завершены.")
+        else:
+            next_round = future_schedule.iloc[0]["Тур"]
+            st.subheader(f"⚽ Предстоящий тур: {next_round} тур")
+            round_matches = schedule[schedule["Тур"] == next_round]
+
+            # Вывод списка матчей
+            st.markdown("### 🗓 Матчи тура:")
+            for _, match in round_matches.iterrows():
+                st.markdown(f"- **{match['Хозяева']} — {match['Гости']}**, {match['Дата'].strftime('%d.%m.%Y')}")
+
+            # Турнирная таблица
+            matches["Голы хозяев"] = pd.to_numeric(matches["Голы хозяев"], errors='coerce')
+            matches["Голы гостей"] = pd.to_numeric(matches["Голы гостей"], errors='coerce')
+            played = matches.dropna(subset=["Голы хозяев", "Голы гостей"])
+            teams = pd.unique(matches[["Хозяева", "Гости"]].values.ravel())
+            stats = {team: {"Игры": 0, "Победы": 0, "Ничьи": 0, "Поражения": 0,
+                            "Забито": 0, "Пропущено": 0, "Очки": 0} for team in teams}
+
+            for _, row in played.iterrows():
+                home, away = row["Хозяева"], row["Гости"]
+                hg, ag = int(row["Голы хозяев"]), int(row["Голы гостей"])
+
+                stats[home]["Игры"] += 1
+                stats[away]["Игры"] += 1
+                stats[home]["Забито"] += hg
+                stats[home]["Пропущено"] += ag
+                stats[away]["Забито"] += ag
+                stats[away]["Пропущено"] += hg
+
+                if hg > ag:
+                    stats[home]["Победы"] += 1
+                    stats[home]["Очки"] += 3
+                    stats[away]["Поражения"] += 1
+                elif ag > hg:
+                    stats[away]["Победы"] += 1
+                    stats[away]["Очки"] += 3
+                    stats[home]["Поражения"] += 1
+                else:
+                    stats[home]["Ничьи"] += 1
+                    stats[away]["Ничьи"] += 1
+                    stats[home]["Очки"] += 1
+                    stats[away]["Очки"] += 1
+
+            table_data = [{
+                "Команда": t,
+                "Очки": s["Очки"],
+                "Разница": s["Забито"] - s["Пропущено"]
+            } for t, s in stats.items()]
+            df_table = pd.DataFrame(table_data)
+            leaders = df_table.sort_values(by=["Очки", "Разница"], ascending=False).head(3)
+
+            st.markdown("### 🥇 Лидеры таблицы:")
+            for _, row in leaders.iterrows():
+                word = pluralize_ochko(row['Очки'])
+                st.markdown(f"- {row['Команда']} — {row['Очки']} {word} (разница {row['Разница']})")
+
+            # Бомбардиры
+            all_players = []
+            for team, players in squads.items():
+                for player in players:
+                    all_players.append({"Игрок": player["name"], "Голы": player["goals"], "Команда": team})
+
+            df_players = pd.DataFrame(all_players)
+            top_scorers = df_players[df_players["Голы"] > 0].sort_values("Голы", ascending=False).head(3)
+
+            st.markdown("### 🎯 Лучшие бомбардиры:")
+            for _, row in top_scorers.iterrows():
+                st.markdown(f"- {row['Игрок']} ({row['Команда']}) — {row['Голы']} гол(ов)")
+
+            st.markdown("⚡ Грядёт насыщенный тур, который может изменить таблицу. Следите за результатами!")
+
