@@ -577,7 +577,6 @@ with tab4:  # Статистика
             return "очков"
 
     with tab5:  # Анонс тура
-        st.title("📣 Анонс следующего тура")
 
         try:
             matches = pd.read_csv("matches.csv", encoding='utf-8-sig')
@@ -597,7 +596,7 @@ with tab4:  # Статистика
             st.info("Все туры завершены.")
         else:
             next_round = future_schedule.iloc[0]["Тур"]
-            st.subheader(f"⚽ Предстоящий тур: {next_round} тур")
+            st.subheader(f"⚽ Предстоящий тур: №{next_round}" )
             round_matches = schedule[schedule["Тур"] == next_round]
 
             # Вывод списка матчей
