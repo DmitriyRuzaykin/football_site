@@ -353,6 +353,70 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Приволжск",
+            "date": "17.05.2025",
+            "round": 3,
+            "score": "5:2",
+            "goals": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": 28,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": 59,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжский",
+                    "player": "Романов Артем",
+                    "minute": 61,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": 61,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжский",
+                    "player": "Иванов Матвей",
+                    "minute": 71,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": 77,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": 90,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Приволжский",
+                    "player": "Смирнов Серафим",
+                    "minute": 74
+                },
+                {
+                    "team": "ФК Приволжский",
+                    "player": "Иванов Матвей",
+                    "minute": 85
+                }
+            ],
+            "red_cards": []
         }
     ]
 }

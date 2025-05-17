@@ -94,7 +94,7 @@
             "name": "Ильин Станислав",
             "number": 47,
             "position": "ЛП",
-            "goals": 0,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -134,7 +134,17 @@
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
+        },
+        {
+            "name": "Томцев Алексей",
+            "number": 14,
+            "position": "НАП",
+            "goals": 2,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
         }
+
     ],
     "ФК Помары": [
         {
@@ -1586,9 +1596,9 @@
             "name": "Иванов Матвей",
             "number": 12,
             "position": "ПЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1646,6 +1656,15 @@
             "red_cards": 0
         },
         {
+            "name": "Смирнов Серафим",
+            "number": 18,
+            "position": "ПП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        {
             "name": "Архипов Дмитрий",
             "number": 19,
             "position": "ЛП",
@@ -1676,7 +1695,7 @@
             "name": "Романов Артем",
             "number": 7,
             "position": "ЦАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
