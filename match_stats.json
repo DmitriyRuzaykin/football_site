@@ -417,6 +417,133 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Ярамор",
+            "date": "17.05.2025",
+            "round": 3,
+            "score": "3:2",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кузнецов Егор",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Смирнов Валера",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Келушев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Савинов Василий",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": null,
+                    "minute": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Эмеково",
+            "date": "17.05.2025",
+            "round": 3,
+            "score": "2:1",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Д.",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Избанов Дмитрий",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Помары",
+            "date": "17.05.2025",
+            "round": 3,
+            "score": "4:0",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Васильев Андрей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Данилов Андрей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }

@@ -205,7 +205,7 @@
             "name": "Данилов Андрей",
             "number": 28,
             "position": "ЛЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -232,7 +232,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -241,7 +241,7 @@
             "name": "Васильев Андрей",
             "number": 71,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -313,7 +313,7 @@
             "name": "Иванов Константин",
             "number": 25,
             "position": "НАП",
-            "goals": 5,
+            "goals": 6,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -351,9 +351,9 @@
             "name": "Тарасов Алексей",
             "number": 6,
             "position": "ЦЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 2,
             "red_cards": 0
         },
         {
@@ -396,7 +396,7 @@
             "name": "Власов Максим",
             "number": 11,
             "position": "ЦОП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -596,7 +596,7 @@
             "name": "Караев Д.",
             "number": null,
             "position": null,
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -617,6 +617,15 @@
             "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Избанов Д.",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         }
     ],
@@ -942,7 +951,7 @@
             "name": "Смирнов Валера",
             "number": 88,
             "position": "ЛЗ",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -969,7 +978,7 @@
             "name": "Кузнецов Егор",
             "number": 99,
             "position": "ЦП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -978,7 +987,7 @@
             "name": "Келушев Дмитрий",
             "number": 93,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -998,7 +1007,7 @@
             "position": "ЦП",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
