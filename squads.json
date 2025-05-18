@@ -1166,10 +1166,10 @@
             "red_cards": 0
         },
         {
-            "name": "Тимофеев И",
+            "name": "Тимофеев Игорь",
             "number": 3,
             "position": "ЛЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1184,7 +1184,7 @@
             "red_cards": 0
         },
         {
-            "name": "Тимофеев Н",
+            "name": "Тимофеев Николай",
             "number": 22,
             "position": "ПЗ",
             "goals": 0,
@@ -1193,12 +1193,12 @@
             "red_cards": 0
         },
         {
-            "name": "Тимофеев И",
+            "name": "Тимофеев Илья",
             "number": 4,
             "position": "ПЗ",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1265,7 +1265,7 @@
             "red_cards": 0
         },
         {
-            "name": "Тимофеев Н",
+            "name": "Тимофеев Николай",
             "number": 6,
             "position": "ЛП",
             "goals": 0,
