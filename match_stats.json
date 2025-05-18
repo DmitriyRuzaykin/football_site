@@ -374,7 +374,7 @@
                     "assist": null
                 },
                 {
-                    "team": "ФК Приволжский",
+                    "team": "ФК Приволжск",
                     "player": "Романов Артем",
                     "minute": 61,
                     "assist": null
@@ -386,7 +386,7 @@
                     "assist": null
                 },
                 {
-                    "team": "ФК Приволжский",
+                    "team": "ФК Приволжск",
                     "player": "Иванов Матвей",
                     "minute": 71,
                     "assist": null
@@ -406,12 +406,12 @@
             ],
             "yellow_cards": [
                 {
-                    "team": "ФК Приволжский",
+                    "team": "ФК Приволжск",
                     "player": "Смирнов Серафим",
                     "minute": 74
                 },
                 {
-                    "team": "ФК Приволжский",
+                    "team": "ФК Приволжск",
                     "player": "Иванов Матвей",
                     "minute": 85
                 }
@@ -445,13 +445,13 @@
                 },
                 {
                     "team": "ФК Ярамор",
-                    "player": null,
+                    "player": "Харитонов Николай",
                     "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Ярамор",
-                    "player": null,
+                    "player": "Тимофеев Игорь",
                     "minute": null,
                     "assist": null
                 }
@@ -464,7 +464,17 @@
                 },
                 {
                     "team": "ФК Ярамор",
-                    "player": null,
+                    "player": "Атлашкин Константин",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Тимофеев Илья",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
                     "minute": null
                 }
             ],

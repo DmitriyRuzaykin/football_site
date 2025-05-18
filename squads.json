@@ -1202,12 +1202,12 @@
             "red_cards": 0
         },
         {
-            "name": "Атлашкин",
+            "name": "Атлашкин Константин",
             "number": 8,
             "position": "ЦОП",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1220,12 +1220,12 @@
             "red_cards": 0
         },
         {
-            "name": "Кошаев",
+            "name": "Кошаев Данил",
             "number": 77,
             "position": "ЦП",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 2,
             "red_cards": 0
         },
         {
@@ -1310,10 +1310,10 @@
             "red_cards": 0
         },
         {
-            "name": "Харитонов",
+            "name": "Харитонов Николай",
             "number": 10,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
