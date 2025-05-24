@@ -554,6 +554,22 @@
             ],
             "yellow_cards": [],
             "red_cards": []
-        }
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Параты",
+            "date": "24.05.2025",
+            "round": 4,
+            "score": "0:1",
+            "goals": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": 25,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
     ]
 }
