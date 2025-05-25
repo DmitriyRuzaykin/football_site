@@ -596,6 +596,12 @@
                     "player": "Шабалин Артур",
                     "minute": 60,
                     "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артём",
+                    "minute": null,
+                    "assist": null
                 }
             ],
             "yellow_cards": [
@@ -603,8 +609,99 @@
                     "team": "ФК Часовенная",
                     "player": "Ефремов Константин",
                     "minute": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Матвей",
+                    "minute": null
                 }
             ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Карамассы",
+            "date": "24.05.2025",
+            "round": 4,
+            "score": "0:4",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Уткин Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Уткин Максим",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Усков Леонид",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Избанов Дмитрий",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Васильев Владимир",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Петьял",
+            "date": "24.05.2025",
+            "round": 4,
+            "score": "1:3",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Данилов Андрей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
             "red_cards": []
         }
     ]

@@ -250,7 +250,7 @@
             "name": "Данилов Андрей",
             "number": 28,
             "position": "ЛЗ",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -594,7 +594,7 @@
             "name": "Денисов Юлиан",
             "number": 10,
             "position": "НАП",
-            "goals": 0,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -629,7 +629,7 @@
             "red_cards": 0
         },
         {
-            "name": "Усков Р.",
+            "name": "Усков Роман",
             "number": null,
             "position": null,
             "goals": 1,
@@ -647,7 +647,7 @@
             "red_cards": 0
         },
         {
-            "name": "Прокопьев П.",
+            "name": "Прокопьев Павел",
             "number": null,
             "position": null,
             "goals": 1,
@@ -665,7 +665,25 @@
             "red_cards": 0
         },
         {
-            "name": "Избанов Д.",
+            "name": "Избанов Дмитрий",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 2,
+            "red_cards": 0
+        },
+        {
+            "name": "Усков Леонид",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        {
+            "name": "Васильев Владимир",
             "number": null,
             "position": null,
             "goals": 0,
@@ -1131,7 +1149,7 @@
             "name": "Семенов Даниил",
             "number": 97,
             "position": "НАП",
-            "goals": 2,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1158,7 +1176,7 @@
             "name": "Уткин Максим",
             "number": 11,
             "position": "НАП",
-            "goals": 1,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1652,7 +1670,7 @@
             "position": "ПЗ",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 2,
             "red_cards": 0
         },
         {
@@ -1749,7 +1767,7 @@
             "name": "Романов Артем",
             "number": 7,
             "position": "ЦАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
