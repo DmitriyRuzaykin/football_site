@@ -665,9 +665,35 @@
                     "team": "ФК Эмеково",
                     "player": "Васильев Владимир",
                     "minute": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кузнецов Егор",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Савинов Василий",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Савинов Василий",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Васильев Максим",
+                    "minute": null
                 }
             ],
-            "red_cards": []
+            "red_cards": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Савинов Василий",
+                    "minute": null
+                }
+            ]
         },
         {
             "home_team": "ФК Помары",
