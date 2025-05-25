@@ -571,6 +571,41 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Приволжск",
+            "date": "24.05.2025",
+            "round": 4,
+            "score": "3:1",
+            "goals": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Бычков Дмитрий",
+                    "minute": 35,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": 49,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Шабалин Артур",
+                    "minute": 60,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Ефремов Константин",
+                    "minute": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
