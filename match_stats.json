@@ -10,19 +10,19 @@
                 {
                     "team": "ФК Петьял",
                     "player": "Васильев Максим",
-                    "minute": 28,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Петьял",
                     "player": "Власов Максим",
-                    "minute": 52,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Петьял",
                     "player": "Кувшинов Антон",
-                    "minute": 76,
+                    "minute": null,
                     "assist": null
                 }
             ],
@@ -39,43 +39,43 @@
                 {
                     "team": "ФК Помары",
                     "player": "Иванов Константин",
-                    "minute": 15,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Помары",
                     "player": "Иванов Константин",
-                    "minute": 22,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Помары",
                     "player": "Митрофанов Михаил",
-                    "minute": 34,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Помары",
                     "player": "Иванов Константин",
-                    "minute": 47,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Приволжск",
                     "player": "Иванов Кирилл",
-                    "minute": 55,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Помары",
                     "player": "Митрофанов Михаил",
-                    "minute": 63,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Помары",
                     "player": "Иванов Константин",
-                    "minute": 78,
+                    "minute": null,
                     "assist": null
                 }
             ],
@@ -92,25 +92,25 @@
                 {
                     "team": "ФК Сотнур",
                     "player": "Савинов Дмитрий",
-                    "minute": 28,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Сотнур",
                     "player": "Савинов Дмитрий",
-                    "minute": 52,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Ярамор",
                     "player": "Кошаев",
-                    "minute": 76,
+                    "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Ярамор",
                     "player": "Макаров",
-                    "minute": 76,
+                    "minute": null,
                     "assist": null
                 }
             ],
@@ -127,7 +127,7 @@
                 {
                     "team": "ФК Эмеково",
                     "player": "Прокопьев П.",
-                    "minute": 10,
+                    "minute": null,
                     "assist": null
                 },
                 {
@@ -139,7 +139,7 @@
                 {
                     "team": "ФК Эмеково",
                     "player": "Романов Ю.",
-                    "minute": 76,
+                    "minute": null,
                     "assist": null
                 }
             ],
