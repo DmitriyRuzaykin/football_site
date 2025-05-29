@@ -188,6 +188,15 @@
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
+        },
+        {
+            "name": "Тренер: Рузайкин Борис Е.",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
         }
 
     ],
@@ -611,54 +620,27 @@
     ],
     "ФК Эмеково": [
         {
-            "name": "Корнилов М.",
-            "number": null,
-            "position": null,
-            "goals": 1,
+            "name": "Архипов Павел",
+            "number": 69,
+            "position": "ВРТ",
+            "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Романов Н.",
-            "number": null,
-            "position": null,
-            "goals": 1,
+            "name": "Спиридонов Василий",
+            "number": 1,
+            "position": "ВРТ",
+            "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
         },
         {
-            "name": "Усков Роман",
-            "number": null,
-            "position": null,
-            "goals": 1,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Караев Д.",
-            "number": null,
-            "position": null,
-            "goals": 2,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Прокопьев Павел",
-            "number": null,
-            "position": null,
-            "goals": 1,
-            "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
-        },
-        {
-            "name": "Романов Ю.",
-            "number": null,
-            "position": null,
+            "name": "Романов Николай",
+            "number": 2,
+            "position": "ЦЗ",
             "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
@@ -666,29 +648,200 @@
         },
         {
             "name": "Избанов Дмитрий",
-            "number": null,
-            "position": null,
+            "number": 13,
+            "position": "ЦЗ",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
         },
         {
+            "name": "Пушков Никита",
+            "number": 29,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Браслетов Алексей",
+            "number": 25,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Павел",
+            "number": 99,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Токмалаев Александр",
+            "number": 17,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Тараканов Максим",
+            "number": 18,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Браслетов Никита",
+            "number": 4,
+            "position": "ЦЗ",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
             "name": "Усков Леонид",
-            "number": null,
-            "position": null,
+            "number": 12,
+            "position": "ЦП",
             "goals": 0,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
         },
         {
+            "name": "Усков Роман",
+            "number": 5,
+            "position": "ЦП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
             "name": "Васильев Владимир",
+            "number": 3,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
+            "red_cards": 0
+        },
+        {
+            "name": "Прокопьев Павел",
+            "number": 10,
+            "position": "ЦП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Избанов Андрей",
+            "number": 66,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кукушкин Константин",
+            "number": 52,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Кузьмин Артем",
+            "number": 31,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Корнилов Иван",
+            "number": 11,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Вылегжанин Глеб",
+            "number": 27,
+            "position": "ЦП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Романов Юрий",
+            "number": 9,
+            "position": "НАП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Корнилов Матвей",
+            "number": 8,
+            "position": "НАП",
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Караев Данил",
+            "number": 23,
+            "position": "НАП",
+            "goals": 2,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Дамир",
+            "number": 14,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Безымов Сергей",
+            "number": 7,
+            "position": "НАП",
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Тренер: Степанов Александр В.",
             "number": null,
             "position": null,
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 0,
             "red_cards": 0
         }
     ],
