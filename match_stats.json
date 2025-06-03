@@ -729,6 +729,201 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Часовенная",
+            "date": "31.05.2025",
+            "round": 5,
+            "score": "4:4",
+            "goals": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Акозин Данил",
+                    "minute": 50,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": 52,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Журавлев Андрей",
+                    "minute": 57,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": 64,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Краснов Даниил",
+                    "minute": 70,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": 81,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": "90+7",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": "90+10",
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Иванов Николай",
+                    "minute": 72
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": 72
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Краснов Даниил",
+                    "minute": 89
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Дмитрий",
+                    "minute": 89
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кабышев Максим",
+                    "minute": "90+5"
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Эмеково",
+            "date": "31.05.2025",
+            "round": 5,
+            "score": "4:2",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Усков Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Степанов Александр В.",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Егоров Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Егоров Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кожаев Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Макаров Семен",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Богданов Кирилл",
+                    "minute": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Богданов Кирилл",
+                    "minute": null
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Богданов Кирилл",
+                    "minute": null
+                }
+            ]
+        },
+        {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Сотнур",
+            "date": "31.05.2025",
+            "round": 5,
+            "score": "3:2",
+            "goals": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Васильев Константин",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }

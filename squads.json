@@ -958,7 +958,7 @@
             "name": "Краснов Даниил",
             "number": 80,
             "position": "ЦП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1391,7 +1391,7 @@
             "red_cards": 0
         },
         {
-            "name": "Богданов",
+            "name": "Богданов Кирилл",
             "number": 21,
             "position": "ЛЗ",
             "goals": 0,
@@ -1517,10 +1517,10 @@
             "red_cards": 0
         },
         {
-            "name": "Макаров",
+            "name": "Макаров Семен",
             "number": 97,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
