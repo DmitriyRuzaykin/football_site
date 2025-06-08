@@ -177,8 +177,8 @@
             "position": "НАП",
             "goals": 2,
             "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
+            "yellow_cards": 2,
+            "red_cards": 1
         },
         {
             "name": "Ильин Алик",
@@ -286,7 +286,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -367,7 +367,7 @@
             "name": "Иванов Константин",
             "number": 25,
             "position": "НАП",
-            "goals": 6,
+            "goals": 7,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -405,7 +405,7 @@
             "name": "Тарасов Алексей",
             "number": 6,
             "position": "ЦЗ",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -612,7 +612,7 @@
             "name": "Денисов Юлиан",
             "number": 10,
             "position": "НАП",
-            "goals": 3,
+            "goals": 6,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -758,7 +758,7 @@
             "name": "Избанов Андрей",
             "number": 66,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -821,7 +821,7 @@
             "name": "Караев Данил",
             "number": 23,
             "position": "НАП",
-            "goals": 2,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -913,7 +913,7 @@
             "name": "Ахвледиани Давид",
             "number": 20,
             "position": "ЦЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -967,7 +967,7 @@
             "name": "Краснов Даниил",
             "number": 80,
             "position": "ЦП",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1430,7 +1430,7 @@
             "name": "Атлашкин Константин",
             "number": 8,
             "position": "ЦОП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1729,7 +1729,7 @@
             "name": "Яковлев Дмитрий",
             "number": 15,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1774,7 +1774,7 @@
             "name": "Васильев Михаил",
             "number": 11,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
