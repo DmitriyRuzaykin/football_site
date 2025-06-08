@@ -924,6 +924,170 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Параты",
+            "date": "08.06.2025",
+            "round": 6,
+            "score": "3:0",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Избанов Андрей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": 21
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": 85
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": 85
+                }
+            ]
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Часовенная",
+            "date": "08.06.2025",
+            "round": 6,
+            "score": "2:3",
+            "goals": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Ахвледиани Давид",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Краснов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Краснов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Яковлев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Васильев Михаил",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Помары",
+            "date": "08.06.2025",
+            "round": 6,
+            "score": "1:2",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": 23,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": 50,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Атлашкин Константин",
+                    "minute": 90,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Тимофеев",
+                    "minute": 40,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Приволжск",
+            "date": "08.06.2025",
+            "round": 6,
+            "score": "4:1",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
