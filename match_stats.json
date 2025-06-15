@@ -1187,20 +1187,7 @@
                     "assist": null
                 }
             ],
-            "yellow_cards": [
-                {
-                    "team": "ФК Параты",
-                    "player": "Рузайкин Кирилл",
-                    "minute": null,
-                    "assist": null
-                },
-                {
-                    "team": "ФК Параты",
-                    "player": "Муравьев Радик",
-                    "minute": null,
-                    "assist": null
-                }
-            ],
+            "yellow_cards": [],
             "red_cards": []
         }
     ]
