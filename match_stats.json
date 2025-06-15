@@ -1092,7 +1092,7 @@
         {
             "home_team": "ФК Параты",
             "away_team": "ФК Сотнур",
-            "date": "04.06.2025",
+            "date": "15.06.2025",
             "round": 7,
             "score": "5:2",
             "goals": [
@@ -1135,6 +1135,54 @@
                 {
                     "team": "ФК Параты",
                     "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Эмеково",
+            "date": "15.06.2025",
+            "round": 7,
+            "score": "3:1",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Романов Юрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Шашков Артем",
                     "minute": null,
                     "assist": null
                 }

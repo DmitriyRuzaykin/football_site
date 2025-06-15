@@ -286,7 +286,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -313,7 +313,7 @@
             "name": "Шашков Артём",
             "number": 9,
             "position": "ЛП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -367,7 +367,7 @@
             "name": "Иванов Константин",
             "number": 25,
             "position": "НАП",
-            "goals": 7,
+            "goals": 8,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -803,7 +803,7 @@
             "name": "Романов Юрий",
             "number": 9,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
