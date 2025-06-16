@@ -1295,13 +1295,13 @@
                 },
                 {
                     "team": "ФК Приволжск",
-                    "player": null,
+                    "player": "Романов Артем",
                     "minute": null,
                     "assist": null
                 },
                 {
                     "team": "ФК Приволжск",
-                    "player": null,
+                    "player": "Иванов Матвей",
                     "minute": null,
                     "assist": null
                 }
@@ -1310,6 +1310,12 @@
                 {
                     "team": "ФК Карамассы",
                     "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
                     "minute": null,
                     "assist": null
                 }

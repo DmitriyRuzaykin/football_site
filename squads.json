@@ -1830,7 +1830,7 @@
             "name": "Иванов Матвей",
             "number": 12,
             "position": "ПЗ",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -1929,9 +1929,9 @@
             "name": "Романов Артем",
             "number": 7,
             "position": "ЦАП",
-            "goals": 5,
+            "goals": 6,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
