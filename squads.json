@@ -1382,12 +1382,12 @@
             "red_cards": 0
         },
         {
-            "name": "Романов",
+            "name": "Романов Дмитрий",
             "number": 27,
             "position": "ЦЗ",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1448,16 +1448,16 @@
             "name": "Кошаев Данил",
             "number": 77,
             "position": "ЦП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
         },
         {
-            "name": "Кажаев",
+            "name": "Кажаев Константин",
             "number": 99,
             "position": "ЦП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1529,7 +1529,7 @@
             "name": "Макаров Семен",
             "number": 97,
             "position": "НАП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1875,7 +1875,7 @@
             "name": "Афанасьев Дмитрий",
             "number": 45,
             "position": "ЦОП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1929,7 +1929,7 @@
             "name": "Романов Артем",
             "number": 7,
             "position": "ЦАП",
-            "goals": 6,
+            "goals": 7,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1940,7 +1940,7 @@
             "position": "НАП",
             "goals": 2,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
