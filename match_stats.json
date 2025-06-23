@@ -1448,6 +1448,94 @@
                     "assist": null
                 }
             ]
+        },
+        {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Сотнур",
+            "date": "21.06.2025",
+            "round": 8,
+            "score": "4:4",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Денисов Юлиан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Алексеев Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Еремин Руслан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Васильев Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Васильев Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Шишков Арсений",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Часовенная",
+            "date": "21.06.2025",
+            "round": 8,
+            "score": "2:1",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Гаврилов Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Охотин Юрий",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }

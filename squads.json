@@ -513,7 +513,7 @@
             "name": "Алексеев Никита",
             "number": 15,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -531,7 +531,7 @@
             "name": "Ерёмин Руслан",
             "number": 59,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -612,7 +612,7 @@
             "name": "Денисов Юлиан",
             "number": 10,
             "position": "НАП",
-            "goals": 6,
+            "goals": 8,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -976,7 +976,7 @@
             "name": "Охотин Юрий",
             "number": 9,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1311,7 +1311,7 @@
             "name": "Семенов Даниил",
             "number": 97,
             "position": "НАП",
-            "goals": 5,
+            "goals": 6,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -1329,7 +1329,7 @@
             "name": "Гаврилов Роман",
             "number": 30,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1675,7 +1675,7 @@
             "name": "Васильев Константин",
             "number": 8,
             "position": "ПЗ",
-            "goals": 1,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1711,7 +1711,7 @@
             "name": "Шишков Арсений",
             "number": 14,
             "position": "ПП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1747,7 +1747,7 @@
             "name": "Мшаров Стас",
             "number": 7,
             "position": "НАП",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
