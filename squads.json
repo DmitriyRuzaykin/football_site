@@ -49,7 +49,7 @@
             "name": "Рузайкин Кирилл",
             "number": 88,
             "position": "ЦЗ",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -87,7 +87,7 @@
             "position": "ПЗ",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 2,
             "red_cards": 0
         },
         {
@@ -130,7 +130,7 @@
             "name": "Ильин Станислав",
             "number": 47,
             "position": "ЛП",
-            "goals": 10,
+            "goals": 12,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -262,7 +262,7 @@
             "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
-            "red_cards": 0
+            "red_cards": 1
         },
         {
             "name": "Иванов Илья",
@@ -286,7 +286,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -315,7 +315,7 @@
             "position": "ЛП",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -331,7 +331,7 @@
             "name": "Невский Александр",
             "number": 19,
             "position": "ЛП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -349,7 +349,7 @@
             "name": "Марков Роман",
             "number": 11,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
