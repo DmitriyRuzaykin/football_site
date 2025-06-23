@@ -1375,6 +1375,79 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Помары",
+            "date": "21.06.2025",
+            "round": 8,
+            "score": "3:4",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Невский Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Марков Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Шашков Артём",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кабышев Максим",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Данилов Андрей",
+                    "minute": null,
+                    "assist": null
+                }
+            ]
         }
     ]
 }
