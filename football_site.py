@@ -667,3 +667,14 @@ with streamlit_analytics.track():
                 # st.markdown("### 🟥 Дисквалификации:")
                 # st.markdown(f"- {"Томцев Алексей"} ({"ФК Параты"}) - {"удаление"}")
 
+                if st.button("Скачать analytics.json"):
+                    try:
+                        with open("analytics.json", "rb") as f:
+                            st.download_button(
+                                label="⬇️ Download",
+                                data=f,
+                                file_name="analytics.json",
+                                mime="application/json"
+                            )
+                    except FileNotFoundError:
+                        st.error("Файл не найден. Взаимодействуйте с приложением, чтобы собрать данные.")
