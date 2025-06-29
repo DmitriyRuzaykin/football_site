@@ -1536,6 +1536,49 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Петьял",
+            "date": "28.06.2025",
+            "round": 9,
+            "score": "0:2",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Васильев Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Прокопьев Максим",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Алексеев Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кузикин Артем",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Федоров Алексей",
+                    "minute": null,
+                    "assist": null
+                }
+            ]
         }
     ]
 }
