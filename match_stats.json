@@ -1579,6 +1579,41 @@
                     "assist": null
                 }
             ]
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Карамассы",
+            "date": "28.06.2025",
+            "round": 9,
+            "score": "1:3",
+            "goals": [
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Савинов Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Ильин Роберт",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Микаков Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Иванов Александр",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }

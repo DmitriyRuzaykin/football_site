@@ -1230,7 +1230,7 @@
             "name": "Ильин Роберт",
             "number": 10,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1348,6 +1348,24 @@
             "number": 11,
             "position": "НАП",
             "goals": 3,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Микаков Александр",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Александр",
+            "number": null,
+            "position": null,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1765,7 +1783,7 @@
             "name": "Савинов Дмитрий",
             "number": 10,
             "position": "НАП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
