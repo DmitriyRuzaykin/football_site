@@ -1,3 +1,4 @@
 streamlit==1.32.2
-pandas==2.1.4
+pandas==2.3.0
 streamlit-analytics
+jinja2>=3.1.6
