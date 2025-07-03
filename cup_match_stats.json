@@ -1,0 +1,239 @@
+{
+    "matches": [
+        {
+            "stage": "1/8 финала",
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Приволжск",
+            "date": "07.05.2025",
+            "score": "3:0",
+            "goals": [
+                {"team": "ФК Эмеково", "player": null, "minute": null},
+                {"team": "ФК Эмеково", "player": null, "minute": null},
+                {"team": "ФК Эмеково", "player": null, "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/8 финала",
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Эмеково",
+            "date": "28.05.2025",
+            "score": "3:4",
+            "goals": [
+                {"team": "ФК Эмеково", "player": "Романов Юрий", "minute": 15},
+                {"team": "ФК Эмеково", "player": "Романов Юрий", "minute": 23},
+                {"team": "ФК Приволжск", "player": "Иванов Кирилл", "minute": 39},
+                {"team": "ФК Приволжск", "player": "Романов Артем", "minute": 43},
+                {"team": "ФК Эмеково", "player": "Усков леонид", "minute": 44},
+                {"team": "ФК Приволжск", "player": "Романов Артем", "minute": 64},
+                {"team": "ФК Эмеково", "player": "Прокофьев Павел", "minute": 85}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Эмеково", "player": "Избанов Андрей", "minute": null},
+                {"team": "ФК Эмеково", "player": "Избанов Дмитрий", "minute": null},
+                {"team": "ФК Эмеково", "player": "Усков Леонид", "minute": "45+2"},
+                {"team": "ФК Эмеково", "player": "Иванов Павел", "minute": 58}
+            ],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Помары",
+            "away_team": "ФК Сотнур",
+            "date": "04.06.2025",
+            "score": "7:2",
+            "goals": [
+                {"team": "ФК Сотнур", "player": "Мшаров Дмитрий", "minute": 7},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": 25},
+                {"team": "ФК Помары", "player": "Юрков Игорь", "minute": 27},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": 47},
+                {"team": "ФК Помары", "player": "Иванов Константин", "minute": 54},
+                {"team": "ФК Сотнур", "player": "Мшаров Стас", "minute": 69},
+                {"team": "ФК Помары", "player": "Иванов Константин", "minute": 78},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": 87},
+                {"team": "ФК Помары", "player": "Иванов Константин", "minute": "90+2"}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Помары", "player": "Марков Роман", "minute": 21},
+                {"team": "ФК Помары", "player": "Митрофанов Михаил", "minute": 57},
+                {"team": "ФК Сотнур", "player": "Васильев Константин", "minute": 58},
+                {"team": "ФК Сотнур", "player": "Васильев Константин", "minute": 58}
+            ],
+            "red_cards": [
+                {"team": "ФК Сотнур", "player": "Васильев Константин", "minute": 58}
+            ]
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Параты",
+            "away_team": "ФК Часовенная",
+            "date": "04.06.2025",
+            "score": "4:0",
+            "goals": [
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": null},
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": null},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": null},
+                {"team": "ФК Параты", "player": "Рузайкин Дмитрий", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Карамассы",
+            "date": "04.06.2025",
+            "score": "1:2",
+            "goals": [
+                {"team": "ФК Петьял", "player": "Денисов Юлиан", "minute": null},
+                {"team": "ФК Карамассы", "player": "Семенов Даниил", "minute": null},
+                {"team": "ФК Карамассы", "player": "Семенов Даниил", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Ярамор",
+            "date": "04.06.2025",
+            "score": "2:0",
+            "goals": [
+                {"team": "ФК Эмеково", "player": "Усков Роман", "minute": null},
+                {"team": "ФК Караев Даниил", "player": "Семенов Даниил", "minute": null},
+                {"team": "ФК Карамассы", "player": "Семенов Данил", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Помары",
+            "date": "18.06.2025",
+            "score": "1:4",
+            "goals": [
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": null},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": null},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": null},
+                {"team": "ФК Помары", "player": "Иванов Константин", "minute": null},
+                {"team": "ФК Сотнур", "player": "Мшаров Дмитрий", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Параты",
+            "date": "18.06.2025",
+            "score": "5:4",
+            "goals": [
+                {"team": "ФК Часовенная", "player": "Шабалин Артур", "minute": 15},
+                {"team": "ФК Часовенная", "player": "Бычков Руслан", "minute": 25},
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": 35},
+                {"team": "ФК Часовенная", "player": "Ефремов Константин", "minute": 39},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": 44},
+                {"team": "ФК Часовенная", "player": "Краснов Даниил", "minute": 45},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": 48},
+                {"team": "ФК Часовенная", "player": "Шабалин Артур", "minute": 67},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": 75}
+            ],
+            "yellow_cards": [
+              {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": null},
+              {"team": "ФК Часовенная", "player": "Шабалин Артур", "minute": null}
+            ],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Эмеково",
+            "date": "18.06.2025",
+            "score": "2:2",
+            "goals": [
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Эмеково", "player": "Прокофьев Павел", "minute": null},
+                {"team": "ФК Ярамор", "player": "Тимофеев Илья", "minute": null},
+                {"team": "ФК Ярамор", "player": "Макаров", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/4 финала",
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Петьял",
+            "date": "18.06.2025",
+            "score": "3:4",
+            "goals": [
+                {"team": "ФК Петьял", "player": "Васильев Максим", "minute": null},
+                {"team": "ФК Карамассы", "player": "Семенов Данил", "minute": null},
+                {"team": "ФК Петьял", "player": "Власов Станислав", "minute": null},
+                {"team": "ФК Карамассы", "player": "Смирнов Валера", "minute": null},
+                {"team": "ФК Петьял", "player": "Семенов Аркадий", "minute": null},
+                {"team": "ФК Карамассы", "player": "Кузнецов Егор", "minute": null},
+                {"team": "ФК Петьял", "player": "Еремин Руслан", "minute": null}
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
+            "stage": "1/2 финала",
+            "home_team": "ФК Помары",
+            "away_team": "ФК Параты",
+            "date": "02.07.2025",
+            "score": "3:6",
+            "goals": [
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": 10},
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": 18},
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": 20},
+                {"team": "ФК Помары", "player": "Иванов Константин", "minute": 23},
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": 66},
+                {"team": "ФК Помары", "player": "Васильев Андрей", "minute": 68},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": 77},
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": 81},
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": "90+3"}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Помары", "player": "Данилов Андрей", "minute": 45},
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": null},
+                {"team": "ФК Параты", "player": "Салтуганов Максим", "minute": 60}
+            ],
+            "red_cards": []
+        },
+        {
+            "stage": "1/2 финала",
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Петьял",
+            "date": "02.07.2025",
+            "score": "4:4",
+            "goals": [
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Эмеково", "player": "Усков Роман", "minute": null},
+                {"team": "ФК Эмеково", "player": "Усков Роман", "minute": null},
+                {"team": "ФК Петьял", "player": "Денисов Юлиан", "minute": null},
+                {"team": "ФК Петьял", "player": "Денисов Юлиан", "minute": null},
+                {"team": "ФК Петьял", "player": "Еремин Руслан", "minute": null},
+                {"team": "ФК Петьял", "player": "Еремин Руслан", "minute": null}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Эмеково", "player": "Усков Леонид", "minute": null},
+                {"team": "ФК Эмеково", "player": "Избанов Андрей", "minute": null},
+                {"team": "ФК Эмеково", "player": "Прокопьев Артур", "minute": null},
+                {"team": "ФК Эмеково", "player": "Прокопьев Артур", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Петьял", "player": "Еремин Руслан", "minute": null},
+                {"team": "ФК Петьял", "player": "Самарский Никита", "minute": null}
+            ],
+            "red_cards": [
+                {"team": "ФК Эмеково", "player": "Прокопьев Артур", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Петьял", "player": "Тарасов Алексей", "minute": null}
+            ]
+        }
+    ]
+}

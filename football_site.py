@@ -303,32 +303,45 @@ with streamlit_analytics.track():
                 display: flex;
                 justify-content: space-between;
             }
+            .cup-stats-btn {
+                margin-left: 10px;
+                padding: 2px 8px;
+                font-size: 12px;
+            }
+            .match-stats-container {
+                margin-top: 10px;
+                padding: 15px;
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                border: 1px solid #dee2e6;
+            }
         </style>
         """, unsafe_allow_html=True)
 
-        cup_matches = [
-            {"stage": "1/8 финала", "date": "07.05.2025", "home": "ФК Эмеково", "away": "ФК Приволжск", "score": "3:0"},
-            {"stage": "1/8 финала", "date": "28.05.2025", "home": "ФК Приволжск", "away": "ФК Эмеково", "score": "3:4"},
-            {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Помары", "away": "ФК Сотнур", "score": "7:2"},
-            {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Сотнур", "away": "ФК Помары", "score": "1:4"},
-            {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Параты", "away": "ФК Часовенная", "score": "4:0"},
-            {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Часовенная", "away": "ФК Параты", "score": "5:4"},
-            {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Эмеково", "away": "ФК Ярамор", "score": "2:0"},
-            {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Ярамор", "away": "ФК Эмеково", "score": "2:2"},
-            {"stage": "1/4 финала", "date": "04.06.2025", "home": "ФК Петьял", "away": "ФК Карамассы", "score": "1:2"},
-            {"stage": "1/4 финала", "date": "18.06.2025", "home": "ФК Карамассы", "away": "ФК Петьял", "score": "3:4 (пен. 2:4)"},
-            {"stage": "1/2 финала", "date": "02.07.2025", "home": "ФК Помары", "away": "ФК Параты", "score": "3:6"},
-            {"stage": "1/2 финала", "date": "16.07.2025", "home": "ФК Параты", "away": "ФК Помары", "score": None},
-            {"stage": "1/2 финала", "date": "02.07.2025", "home": "ФК Эмеково", "away": "ФК Петьял", "score": "4:4"},
-            {"stage": "1/2 финала", "date": "16.07.2025", "home": "ФК Петьял", "away": "ФК Эмеково", "score": None},
-            {"stage": "Финал", "date": "30.07.2025", "home": "?", "away": "?", "score": None}
-        ]
+        # Загрузка данных кубка
+        try:
+            with open('cup_matches.json', 'r', encoding='utf-8') as f:
+                cup_matches = json.load(f)
+        except FileNotFoundError:
+            st.error("Файл cup_matches.json не найден")
+            cup_matches = []
 
+        # Загрузка статистики матчей кубка
+        try:
+            with open('cup_match_stats.json', 'r', encoding='utf-8') as f:
+                cup_match_stats = json.load(f)
+        except FileNotFoundError:
+            st.warning("Файл cup_match_stats.json не найден. Статистика матчей недоступна.")
+            cup_match_stats = {"matches": []}
+
+        # Группировка матчей по стадиям
         from collections import defaultdict
+
         stages = defaultdict(list)
         for m in cup_matches:
             stages[m["stage"]].append(m)
 
+        # Отображение матчей по стадиям
         for stage in ["1/8 финала", "1/4 финала", "1/2 финала", "Финал"]:
             st.markdown(f'<div class="cup-header">{stage}</div>', unsafe_allow_html=True)
             for m in stages[stage]:
@@ -337,30 +350,113 @@ with streamlit_analytics.track():
                 away = m["away"]
                 score = m["score"]
 
-                # Форматирование команд и результата
-                if score:
-                    try:
-                        hg, ag = map(int, score.split(":"))
-                        if hg > ag:
-                            home = f'<span class="cup-winner">{home}</span>'
-                        elif ag > hg:
-                            away = f'<span class="cup-winner">{away}</span>'
-                    except:
-                        pass
-                    score_html = f'<span class="cup-result">{score}</span>'
-                else:
-                    score_html = ""
+                # Создаем контейнер для матча
+                with st.container():
+                    # Строка с информацией о матче
+                    col1, col2, col3 = st.columns([2, 5, 2])
 
-                st.markdown(
-                    f'''
-                    <div class="cup-row cup-match">
-                        <div>{date}</div>
-                        <div>{home} – {away}</div>
-                        <div>{score_html}</div>
-                    </div>
-                    ''',
-                    unsafe_allow_html=True
-                )
+                    with col1:
+                        st.markdown(f'<div>{date}</div>', unsafe_allow_html=True)
+
+                    # Форматирование команд и результата
+                    if score:
+                        try:
+                            hg, ag = map(int, score.split(":"))
+                            if hg > ag:
+                                home = f'<span class="cup-winner">{home}</span>'
+                            elif ag > hg:
+                                away = f'<span class="cup-winner">{away}</span>'
+                        except:
+                            pass
+                        score_html = f'<span class="cup-result">{score}</span>'
+                    else:
+                        score_html = ""
+
+                    with col2:
+                        st.markdown(f'<div>{home} – {away}</div>', unsafe_allow_html=True)
+
+                    with col3:
+                        st.markdown(f'<div>{score_html}</div>', unsafe_allow_html=True)
+
+                    # Кнопка для просмотра статистики (если матч сыгран)
+                    if score:
+                        # Находим статистику для текущего матча
+                        match_stats = None
+                        for match in cup_match_stats["matches"]:
+                            if (match["home_team"] == m["home"] and
+                                    match["away_team"] == m["away"] and
+                                    match["date"] == m["date"]):
+                                match_stats = match
+                                break
+
+                        if match_stats:
+                            # Создаем уникальный ключ для кнопки
+                            btn_key = f"stats_btn_{m['home']}_{m['away']}_{m['date']}"
+
+                            # Отображаем кнопку под матчем
+                            if st.button("📊 Показать статистику матча", key=btn_key,
+                                         help=f"Статистика матча {m['home']} - {m['away']}"):
+
+                                # Контейнер для статистики
+                                with st.container():
+                                    st.markdown('<div class="match-stats-container">', unsafe_allow_html=True)
+
+                                    # Создаем вкладки для разных типов статистики
+                                    tabs = st.tabs(["Голы", "Жёлтые карточки", "Красные карточки"])
+
+                                    with tabs[0]:  # Голы
+                                        if "goals" in match_stats and match_stats["goals"]:
+                                            goals_data = []
+                                            for goal in match_stats["goals"]:
+                                                goals_data.append({
+                                                    "Команда": goal["team"],
+                                                    "Игрок": goal["player"],
+                                                    "Минута": goal["minute"],
+                                                    "Ассистент": goal.get("assist", "-")
+                                                })
+                                            st.dataframe(
+                                                pd.DataFrame(goals_data),
+                                                use_container_width=True,
+                                                hide_index=True
+                                            )
+                                        else:
+                                            st.info("Нет данных о забитых голах в этом матче")
+
+                                    with tabs[1]:  # Жёлтые карточки
+                                        if "yellow_cards" in match_stats and match_stats["yellow_cards"]:
+                                            yellow_data = []
+                                            for card in match_stats["yellow_cards"]:
+                                                yellow_data.append({
+                                                    "Команда": card["team"],
+                                                    "Игрок": card["player"],
+                                                    "Минута": card["minute"]
+                                                })
+                                            st.dataframe(
+                                                pd.DataFrame(yellow_data),
+                                                use_container_width=True,
+                                                hide_index=True
+                                            )
+                                        else:
+                                            st.info("Нет данных о желтых карточках в этом матче")
+
+                                    with tabs[2]:  # Красные карточки
+                                        if "red_cards" in match_stats and match_stats["red_cards"]:
+                                            red_data = []
+                                            for card in match_stats["red_cards"]:
+                                                red_data.append({
+                                                    "Команда": card["team"],
+                                                    "Игрок": card["player"],
+                                                    "Минута": card["minute"]
+                                                })
+                                            st.dataframe(
+                                                pd.DataFrame(red_data),
+                                                use_container_width=True,
+                                                hide_index=True
+                                            )
+                                        else:
+                                            st.info("Нет данных о красных карточках в этом матче")
+
+                                    st.markdown('</div>', unsafe_allow_html=True)
 
     with tab3:  # Составы команд
         st.title("👥 Составы команд")
@@ -445,134 +541,295 @@ with streamlit_analytics.track():
     with tab4:  # Статистика
         st.title("📊 Статистика игроков")
 
-        # Загрузка данных
-        try:
-            with open('squads.json', 'r', encoding='utf-8') as f:
-                team_squads = json.load(f)
-        except FileNotFoundError:
-            st.error("Файл squads.json не найден")
-            team_squads = {}
+        # Добавляем выбор типа турнира
+        tournament_type = st.radio(
+            "Выберите турнир",
+            ["Чемпионат", "Кубок"],
+            horizontal=True
+        )
 
-        # Собираем всех игроков
-        all_players = []
-        for team, players in team_squads.items():
-            for player in players:
-                player['team'] = team  # Добавляем название команды
-                all_players.append(player)
+        if tournament_type == "Чемпионат":
+            # Загрузка данных чемпионата
+            try:
+                with open('squads.json', 'r', encoding='utf-8') as f:
+                    team_squads = json.load(f)
+            except FileNotFoundError:
+                st.error("Файл squads.json не найден")
+                team_squads = {}
 
-        if not all_players:
-            st.info("Пока нет статистики по игрокам")
-        else:
-            # Создаем DataFrame
-            df = pd.DataFrame(all_players)
+            # Собираем всех игроков
+            all_players = []
+            for team, players in team_squads.items():
+                for player in players:
+                    player['team'] = team  # Добавляем название команды
+                    all_players.append(player)
 
-            # Стили для таблиц
-            st.markdown("""
-            <style>
-            .stat-table {
-                margin-bottom: 30px;
-            }
-            .stat-title {
-                font-size: 1.3em;
-                color: #2c3e50;
-                margin: 25px 0 10px 0;
-                border-bottom: 2px solid #4CAF50;
-                padding-bottom: 5px;
-            }
-            </style>
-            """, unsafe_allow_html=True)
-
-            # Таблица бомбардиров
-            st.markdown('<div class="stat-title">🏅 Лучшие бомбардиры</div>', unsafe_allow_html=True)
-            scorers = df[df['goals'] > 0].sort_values('goals', ascending=False)
-            if not scorers.empty:
-                st.dataframe(
-                    scorers[['name', 'team', 'goals']]
-                    .rename(columns={
-                        'name': 'Игрок',
-                        'team': 'Команда',
-                        'goals': 'Голы'
-                    }),
-                    column_config={
-                        "Голы": st.column_config.NumberColumn(format="%d")
-                    },
-                    use_container_width=True,
-                    hide_index=True
-                )
+            if not all_players:
+                st.info("Пока нет статистики по игрокам")
             else:
-                st.info("Нет данных о забитых голах")
+                # Создаем DataFrame
+                df = pd.DataFrame(all_players)
 
-            # Таблица желтых карточек
-            st.markdown('<div class="stat-title">🟨 Желтые карточки</div>', unsafe_allow_html=True)
-            yellow_cards = df[df['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
-            if not yellow_cards.empty:
-                st.dataframe(
-                    yellow_cards[['name', 'team', 'yellow_cards']]
-                    .rename(columns={
-                        'name': 'Игрок',
-                        'team': 'Команда',
-                        'yellow_cards': 'Жёлтые'
-                    }),
-                    column_config={
-                        "Жёлтые": st.column_config.NumberColumn(format="%d")
-                    },
-                    use_container_width=True,
-                    hide_index=True
-                )
+                # Стили для таблиц
+                st.markdown("""
+                <style>
+                .stat-table {
+                    margin-bottom: 30px;
+                }
+                .stat-title {
+                    font-size: 1.3em;
+                    color: #2c3e50;
+                    margin: 25px 0 10px 0;
+                    border-bottom: 2px solid #4CAF50;
+                    padding-bottom: 5px;
+                }
+                </style>
+                """, unsafe_allow_html=True)
+
+                # Таблица бомбардиров
+                st.markdown('<div class="stat-title">🏅 Лучшие бомбардиры (Чемпионат)</div>', unsafe_allow_html=True)
+                scorers = df[df['goals'] > 0].sort_values('goals', ascending=False)
+                if not scorers.empty:
+                    st.dataframe(
+                        scorers[['name', 'team', 'goals']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'goals': 'Голы'
+                        }),
+                        column_config={
+                            "Голы": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о забитых голах")
+
+                # Таблица желтых карточек
+                st.markdown('<div class="stat-title">🟨 Желтые карточки (Чемпионат)</div>', unsafe_allow_html=True)
+                yellow_cards = df[df['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
+                if not yellow_cards.empty:
+                    st.dataframe(
+                        yellow_cards[['name', 'team', 'yellow_cards']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'yellow_cards': 'Жёлтые'
+                        }),
+                        column_config={
+                            "Жёлтые": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о желтых карточках")
+
+                # Таблица красных карточек
+                st.markdown('<div class="stat-title">🟥 Красные карточки (Чемпионат)</div>', unsafe_allow_html=True)
+                red_cards = df[df['red_cards'] > 0].sort_values('red_cards', ascending=False)
+                if not red_cards.empty:
+                    st.dataframe(
+                        red_cards[['name', 'team', 'red_cards']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'red_cards': 'Красные'
+                        }),
+                        column_config={
+                            "Красные": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о красных карточках")
+
+        else:  # Кубок
+            # Загрузка статистики матчей кубка
+            try:
+                with open('cup_match_stats.json', 'r', encoding='utf-8') as f:
+                    cup_match_stats = json.load(f)
+            except FileNotFoundError:
+                st.error("Файл cup_match_stats.json не найден")
+                cup_match_stats = {"matches": []}
+
+            # Собираем статистику по игрокам
+            player_stats = defaultdict(lambda: {
+                "goals": 0,
+                "yellow_cards": 0,
+                "red_cards": 0,
+                "team": ""
+            })
+
+            for match in cup_match_stats["matches"]:
+                # Обработка голов
+                if "goals" in match:
+                    for goal in match["goals"]:
+                        player = goal["player"]
+                        player_stats[player]["goals"] += 1
+                        player_stats[player]["team"] = goal["team"]
+
+                # Обработка желтых карточек
+                if "yellow_cards" in match:
+                    for card in match["yellow_cards"]:
+                        player = card["player"]
+                        player_stats[player]["yellow_cards"] += 1
+                        player_stats[player]["team"] = card["team"]
+
+                # Обработка красных карточек
+                if "red_cards" in match:
+                    for card in match["red_cards"]:
+                        player = card["player"]
+                        player_stats[player]["red_cards"] += 1
+                        player_stats[player]["team"] = card["team"]
+
+            # Преобразуем в список словарей
+            players_data = []
+            for player, stats in player_stats.items():
+                players_data.append({
+                    "name": player,
+                    "team": stats["team"],
+                    "goals": stats["goals"],
+                    "yellow_cards": stats["yellow_cards"],
+                    "red_cards": stats["red_cards"]
+                })
+
+            if not players_data:
+                st.info("Нет данных по игрокам в кубке")
             else:
-                st.info("Нет данных о желтых карточках")
+                df_cup = pd.DataFrame(players_data)
 
-            # Таблица красных карточек
-            st.markdown('<div class="stat-title">🟥 Красные карточки</div>', unsafe_allow_html=True)
-            red_cards = df[df['red_cards'] > 0].sort_values('red_cards', ascending=False)
-            if not red_cards.empty:
-                st.dataframe(
-                    red_cards[['name', 'team', 'red_cards']]
-                    .rename(columns={
-                        'name': 'Игрок',
-                        'team': 'Команда',
-                        'red_cards': 'Красные'
-                    }),
-                    column_config={
-                        "Красные": st.column_config.NumberColumn(format="%d")
-                    },
-                    use_container_width=True,
-                    hide_index=True
-                )
-            else:
-                st.info("Нет данных о красных карточках")
+                # Таблица бомбардиров кубка
+                st.markdown('<div class="stat-title">🏅 Лучшие бомбардиры (Кубок)</div>', unsafe_allow_html=True)
+                cup_scorers = df_cup[df_cup['goals'] > 0].sort_values('goals', ascending=False)
+                if not cup_scorers.empty:
+                    st.dataframe(
+                        cup_scorers[['name', 'team', 'goals']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'goals': 'Голы'
+                        }),
+                        column_config={
+                            "Голы": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о забитых голах в кубке")
 
-            # Кнопки скачивания
-            col1, col2, col3 = st.columns(3)
-            with col1:
+                # Таблица желтых карточек кубка
+                st.markdown('<div class="stat-title">🟨 Желтые карточки (Кубок)</div>', unsafe_allow_html=True)
+                cup_yellow = df_cup[df_cup['yellow_cards'] > 0].sort_values('yellow_cards', ascending=False)
+                if not cup_yellow.empty:
+                    st.dataframe(
+                        cup_yellow[['name', 'team', 'yellow_cards']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'yellow_cards': 'Жёлтые'
+                        }),
+                        column_config={
+                            "Жёлтые": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о желтых карточках в кубке")
+
+                # Таблица красных карточек кубка
+                st.markdown('<div class="stat-title">🟥 Красные карточки (Кубок)</div>', unsafe_allow_html=True)
+                cup_red = df_cup[df_cup['red_cards'] > 0].sort_values('red_cards', ascending=False)
+                if not cup_red.empty:
+                    st.dataframe(
+                        cup_red[['name', 'team', 'red_cards']]
+                        .rename(columns={
+                            'name': 'Игрок',
+                            'team': 'Команда',
+                            'red_cards': 'Красные'
+                        }),
+                        column_config={
+                            "Красные": st.column_config.NumberColumn(format="%d")
+                        },
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Нет данных о красных карточках в кубке")
+
+        # Кнопки скачивания (общие для обоих турниров)
+        st.markdown("---")
+        st.subheader("Экспорт данных")
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            if tournament_type == "Чемпионат":
+                data = scorers.to_csv(index=False, encoding='utf-8-sig') if 'scorers' in locals() else ""
                 st.download_button(
                     label="📥 Голы (CSV)",
-                    data=scorers.to_csv(index=False, encoding='utf-8-sig'),
+                    data=data,
                     file_name="goals_stats.csv",
-                    mime="text/csv"
+                    mime="text/csv",
+                    disabled=not ('scorers' in locals())
                 )
-            with col2:
+            else:
+                data = cup_scorers.to_csv(index=False, encoding='utf-8-sig') if 'cup_scorers' in locals() else ""
                 st.download_button(
-                    label="📥 Жёлтые (CSV)",
-                    data=yellow_cards.to_csv(index=False, encoding='utf-8-sig'),
-                    file_name="yellow_cards_stats.csv",
-                    mime="text/csv"
-                )
-            with col3:
-                st.download_button(
-                    label="📥 Красные (CSV)",
-                    data=red_cards.to_csv(index=False, encoding='utf-8-sig'),
-                    file_name="red_cards_stats.csv",
-                    mime="text/csv"
+                    label="📥 Голы (CSV)",
+                    data=data,
+                    file_name="cup_goals_stats.csv",
+                    mime="text/csv",
+                    disabled=not ('cup_scorers' in locals())
                 )
 
-        def pluralize_ochko(n):
-            n = abs(int(n))
-            if 11 <= n % 100 <= 14:
-                return "очков"
-            elif n % 10 == 1:
+        with col2:
+            if tournament_type == "Чемпионат":
+                data = yellow_cards.to_csv(index=False, encoding='utf-8-sig') if 'yellow_cards' in locals() else ""
+                st.download_button(
+                    label="📥 Жёлтые (CSV)",
+                    data=data,
+                    file_name="yellow_cards_stats.csv",
+                    mime="text/csv",
+                    disabled=not ('yellow_cards' in locals())
+                )
+            else:
+                data = cup_yellow.to_csv(index=False, encoding='utf-8-sig') if 'cup_yellow' in locals() else ""
+                st.download_button(
+                    label="📥 Жёлтые (CSV)",
+                    data=data,
+                    file_name="cup_yellow_cards_stats.csv",
+                    mime="text/csv",
+                    disabled=not ('cup_yellow' in locals())
+                )
+
+        with col3:
+            if tournament_type == "Чемпионат":
+                data = red_cards.to_csv(index=False, encoding='utf-8-sig') if 'red_cards' in locals() else ""
+                st.download_button(
+                    label="📥 Красные (CSV)",
+                    data=data,
+                    file_name="red_cards_stats.csv",
+                    mime="text/csv",
+                    disabled=not ('red_cards' in locals())
+                )
+            else:
+                data = cup_red.to_csv(index=False, encoding='utf-8-sig') if 'cup_red' in locals() else ""
+                st.download_button(
+                    label="📥 Красные (CSV)",
+                    data=data,
+                    file_name="cup_red_cards_stats.csv",
+                    mime="text/csv",
+                    disabled=not ('cup_red' in locals())
+                )
+
+        def pluralize_ochko(count):
+            if count % 10 == 1 and count % 100 != 11:
                 return "очко"
-            elif 2 <= n % 10 <= 4:
+            elif 2 <= count % 10 <= 4 and (count % 100 < 10 or count % 100 >= 20):
                 return "очка"
             else:
                 return "очков"
