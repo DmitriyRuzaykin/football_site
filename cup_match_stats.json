@@ -101,8 +101,7 @@
             "score": "2:0",
             "goals": [
                 {"team": "ФК Эмеково", "player": "Усков Роман", "minute": null},
-                {"team": "ФК Караев Даниил", "player": "Семенов Даниил", "minute": null},
-                {"team": "ФК Карамассы", "player": "Семенов Данил", "minute": null}
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null}
             ],
             "yellow_cards": [],
             "red_cards": []
