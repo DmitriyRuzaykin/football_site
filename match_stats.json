@@ -1668,6 +1668,66 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Параты",
+            "date": "05.07.2025",
+            "round": 10,
+            "score": "5:1",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Еремин Руслан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Прокопьев Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Буслаев Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кабышев Максим",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Максимов Матвей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кузикин Артем",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
