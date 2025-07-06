@@ -1670,6 +1670,53 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Ярамор",
+            "date": "28.06.2025",
+            "round": 9,
+            "score": "1:5",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Егоров ",
+                    "minute": 16,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Бычков",
+                    "minute": 20,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": "45+3",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Макаров Семен",
+                    "minute": 71,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Федоров",
+                    "minute": 77,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": 77,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Петьял",
             "away_team": "ФК Параты",
             "date": "05.07.2025",
