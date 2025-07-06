@@ -715,8 +715,8 @@
             "position": "ЦЗ",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
+            "yellow_cards": 2,
+            "red_cards": 1
         },
         {
             "name": "Тараканов Максим",
@@ -740,7 +740,7 @@
             "name": "Усков Леонид",
             "number": 12,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -785,7 +785,7 @@
             "name": "Кукушкин Константин",
             "number": 52,
             "position": "ЦП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1869,13 +1869,13 @@
             "goals": 2,
             "assists": 0,
             "yellow_cards": 2,
-            "red_cards": 0
+            "red_cards": 1
         },
         {
             "name": "Иванов Никита",
             "number": 10,
             "position": "ПЗ",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1911,7 +1911,7 @@
             "name": "Афанасьев Дмитрий",
             "number": 45,
             "position": "ЦОП",
-            "goals": 1,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0

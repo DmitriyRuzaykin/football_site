@@ -1822,6 +1822,73 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Эмеково",
+            "date": "05.07.2025",
+            "round": 10,
+            "score": "3:2",
+            "goals": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Афанасьев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Афанасьев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Усков Леонид",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Токмалаев Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Токмалаев Александр",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Матвей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Токмалаев Александр",
+                    "minute": null,
+                    "assist": null
+                }
+            ]
         }
     ]
 }
