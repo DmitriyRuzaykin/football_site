@@ -7,9 +7,9 @@
             "date": "07.05.2025",
             "score": "3:0",
             "goals": [
-                {"team": "ФК Эмеково", "player": null, "minute": null},
-                {"team": "ФК Эмеково", "player": null, "minute": null},
-                {"team": "ФК Эмеково", "player": null, "minute": null}
+                {"team": "ФК Эмеково", "player": "Прокофьев Павел", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
+                {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null}
             ],
             "yellow_cards": [],
             "red_cards": []
