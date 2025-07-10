@@ -877,7 +877,7 @@
             "name": "Семенов Игорь",
             "number": 15,
             "position": "Врт",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1014,7 +1014,7 @@
             "position": "ПП",
             "goals": 2,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1048,7 +1048,7 @@
             "name": "Ефремов Константин",
             "number": 96,
             "position": "ЛП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1484,16 +1484,16 @@
             "name": "Кошаев Данил",
             "number": 77,
             "position": "ЦП",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
-            "yellow_cards": 2,
+            "yellow_cards": 3,
             "red_cards": 0
         },
         {
             "name": "Кажаев Константин",
             "number": 99,
             "position": "ЦП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1574,7 +1574,7 @@
             "name": "Харитонов Николай",
             "number": 10,
             "position": "НАП",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0

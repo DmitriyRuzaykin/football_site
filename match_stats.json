@@ -1889,6 +1889,72 @@
                     "assist": null
                 }
             ]
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Часовенная",
+            "date": "05.07.2025",
+            "round": 10,
+            "score": "5:2",
+            "goals": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Семенов Игорь",
+                    "minute": 1,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кажаев Константин",
+                    "minute": 9,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Ефремов Константин",
+                    "minute": 20,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": 49,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": 55,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": 68,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": 85,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": 46,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Бычков Дмитрий",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
