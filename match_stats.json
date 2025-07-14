@@ -1955,6 +1955,133 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Параты",
+            "date": "12.07.2025",
+            "round": 11,
+            "score": "5:2",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": 5,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": 34,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": 55,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Павел",
+                    "minute": 67,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": 75,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": 68,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": 85,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Вячеслав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Павел",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Матвеев Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Матвеев Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Матвеев Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Рузайкин Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Кузикин Артем",
+                    "minute": null,
+                    "assist": null
+                }
+            ]
         }
     ]
 }

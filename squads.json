@@ -49,10 +49,10 @@
             "name": "Рузайкин Кирилл",
             "number": 88,
             "position": "ЦЗ",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
-            "yellow_cards": 2,
-            "red_cards": 0
+            "yellow_cards": 4,
+            "red_cards": 1
         },
         {
             "name": "Петров Данил",
@@ -79,7 +79,7 @@
             "goals": 0,
             "assists": 0,
             "yellow_cards": 2,
-            "red_cards": 0
+            "red_cards": 1
         },
         {
             "name": "Кабышев Максим",
@@ -105,8 +105,8 @@
             "position": "ЦП",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
+            "yellow_cards": 2,
+            "red_cards": 1
         },
         {
             "name": "Рузайкин Дмитрий",
@@ -130,10 +130,10 @@
             "name": "Ильин Станислав",
             "number": 47,
             "position": "ЛП",
-            "goals": 12,
+            "goals": 13,
             "assists": 0,
-            "yellow_cards": 0,
-            "red_cards": 0
+            "yellow_cards": 2,
+            "red_cards": 1
         },
         {
             "name": "Кудрявцев Антон",
@@ -286,9 +286,18 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 5,
+            "goals": 7,
             "assists": 0,
             "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Ильин Вячеслав",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -322,7 +331,7 @@
             "name": "Митрофанов Михаил",
             "number": 17,
             "position": "ЛП",
-            "goals": 6,
+            "goals": 7,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -367,7 +376,7 @@
             "name": "Иванов Константин",
             "number": 25,
             "position": "НАП",
-            "goals": 8,
+            "goals": 9,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -376,9 +385,9 @@
             "name": "Иванов Павел",
             "number": 27,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         }
         ],
