@@ -416,7 +416,7 @@
             "position": "ЦЗ",
             "goals": 3,
             "assists": 0,
-            "yellow_cards": 2,
+            "yellow_cards": 3,
             "red_cards": 0
         },
         {
@@ -513,7 +513,7 @@
             "name": "Кувшинов Антон",
             "number": 16,
             "position": "ПП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -576,7 +576,7 @@
             "name": "Власов Станислав",
             "number": 7,
             "position": "ЦАП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1740,7 +1740,7 @@
             "position": "ЦП",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -1792,7 +1792,7 @@
             "name": "Мшаров Стас",
             "number": 7,
             "position": "НАП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1829,6 +1829,15 @@
             "number": 22,
             "position": "НАП",
             "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Владимиров Никита",
+            "number": null,
+            "position": null,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0

@@ -2082,6 +2082,54 @@
                     "assist": null
                 }
             ]
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Петьял",
+            "date": "12.07.2025",
+            "round": 11,
+            "score": "2:2",
+            "goals": [
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Владимиров Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Кувшинов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Станислав",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Тарасов Алексей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
