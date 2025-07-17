@@ -2130,6 +2130,41 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Ярамор",
+            "date": "12.07.2025",
+            "round": 11,
+            "score": "0:4",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кажаев Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Макаров Семен",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
