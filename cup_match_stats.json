@@ -233,6 +233,44 @@
                 {"team": "ФК Эмеково", "player": "Караев Данил", "minute": null},
                 {"team": "ФК Петьял", "player": "Тарасов Алексей", "minute": null}
             ]
+        },
+        {
+            "stage": "1/2 финала",
+            "home_team": "ФК Параты",
+            "away_team": "ФК Помары",
+            "date": "16.07.2025",
+            "score": "1:2",
+            "goals": [
+                {"team": "ФК Помары", "player": "Данилов Андрей", "minute": null},
+                {"team": "ФК Помары", "player": "Ильин Илья", "minute": null},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": null}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Помары", "player": "Данилов Андрей", "minute": null}
+            ],
+            "red_cards": []
+        },
+        {
+            "stage": "1/2 финала",
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Эмеково",
+            "date": "16.07.2025",
+            "score": "3:1",
+            "goals": [
+                {"team": "ФК Петьял", "player": "Власов Станислав", "minute": null},
+                {"team": "ФК Эмеково", "player": "Прокофьев Павел", "minute": null},
+                {"team": "ФК Петьял", "player": "Кошаев Максим", "minute": null},
+                {"team": "ФК Петьял", "player": "Денисов юлиан", "minute": null}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Петьял", "player": "Буслаев Никита", "minute": null},
+                {"team": "ФК Петьял", "player": "Алексеев Артем", "minute": null},
+                {"team": "ФК Петьял", "player": "Кувшинов Антон", "minute": null},
+                {"team": "ФК Эмеково", "player": "Корнилов Матвей", "minute": null},
+                {"team": "ФК Эмеково", "player": "Усков Леонид", "minute": null},
+                {"team": "ФК Эмеково", "player": "Архипов Павел", "minute": null}
+            ],
+            "red_cards": []
         }
     ]
 }
