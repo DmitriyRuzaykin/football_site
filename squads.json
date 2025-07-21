@@ -1239,7 +1239,7 @@
             "name": "Кузнецов Егор",
             "number": 99,
             "position": "ЦП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -1248,7 +1248,7 @@
             "name": "Келушев Дмитрий",
             "number": 93,
             "position": "ЦП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1356,7 +1356,7 @@
             "name": "Петров Роман",
             "number": 7,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1374,7 +1374,7 @@
             "name": "Уткин Максим",
             "number": 11,
             "position": "НАП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1902,9 +1902,9 @@
             "name": "Иванов Никита",
             "number": 10,
             "position": "ПЗ",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
-            "yellow_cards": 1,
+            "yellow_cards": 2,
             "red_cards": 0
         },
         {
@@ -1938,7 +1938,7 @@
             "name": "Афанасьев Дмитрий",
             "number": 45,
             "position": "ЦОП",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1976,7 +1976,7 @@
             "position": "ЛП",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -2022,6 +2022,15 @@
             "goals": 0,
             "assists": 0,
             "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Иванов Евгений",
+            "number": null,
+            "position": null,
+            "goals": 0,
+            "assists": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         }
     ]

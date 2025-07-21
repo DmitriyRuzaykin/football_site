@@ -2212,6 +2212,72 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Приволжск",
+            "date": "19.07.2025",
+            "round": 12,
+            "score": "4:2",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кузнецов Егор",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Келушев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Петров Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Уткин Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Афанасьев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Мокин Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Евгений",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
