@@ -2165,6 +2165,53 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Сотнур",
+            "away_team": "ФК Параты",
+            "date": "19.07.2025",
+            "round": 12,
+            "score": "3:3",
+            "goals": [
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Яковлев Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Тимофеев Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Антонов Антон",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Хайруллин Айнур",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
