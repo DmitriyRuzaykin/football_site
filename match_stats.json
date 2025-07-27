@@ -2132,6 +2132,48 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Карамассы",
+            "date": "12.07.2025",
+            "round": 11,
+            "score": "1:2",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кудряшов Дмитрий",
+                    "minute": 29,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": 49,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кузнецов Егор",
+                    "minute": 82,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Смирнов Валера",
+                    "minute": 60,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": 62,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Приволжск",
             "away_team": "ФК Ярамор",
             "date": "12.07.2025",
