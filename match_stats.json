@@ -2426,6 +2426,41 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Ярамор",
+            "date": "26.07.2025",
+            "round": 13,
+            "score": "4:0",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
