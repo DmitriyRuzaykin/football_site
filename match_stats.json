@@ -2373,6 +2373,59 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Петьял",
+            "date": "26.07.2025",
+            "round": 13,
+            "score": "2:5",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Еремин Руслан",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Буслаев Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Васильев Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
