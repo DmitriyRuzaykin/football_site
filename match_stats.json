@@ -2320,6 +2320,59 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Эмеково",
+            "date": "26.07.2025",
+            "round": 13,
+            "score": "6:1",
+            "goals": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Тимофеев Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Антонов Антон",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }

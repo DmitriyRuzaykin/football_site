@@ -94,7 +94,7 @@
             "name": "Антонов Антон",
             "number": 46,
             "position": "ПЗ",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -130,7 +130,7 @@
             "name": "Ильин Станислав",
             "number": 47,
             "position": "ЛП",
-            "goals": 13,
+            "goals": 16,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 1
@@ -175,7 +175,7 @@
             "name": "Томцев Алексей",
             "number": 14,
             "position": "НАП",
-            "goals": 2,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 1
@@ -184,7 +184,7 @@
             "name": "Тимофеев Александр",
             "number": null,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
