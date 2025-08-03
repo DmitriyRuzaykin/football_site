@@ -1738,7 +1738,7 @@
             "name": "Васильев Константин",
             "number": 8,
             "position": "ПЗ",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1866,7 +1866,7 @@
             "position": null,
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         }
     ],
@@ -1920,7 +1920,7 @@
             "name": "Иванов Никита",
             "number": 10,
             "position": "ПЗ",
-            "goals": 4,
+            "goals": 6,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 0
@@ -1956,7 +1956,7 @@
             "name": "Афанасьев Дмитрий",
             "number": 45,
             "position": "ЦОП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -2019,7 +2019,7 @@
             "name": "Иванов Кирилл",
             "number": 5,
             "position": "НАП",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
