@@ -148,7 +148,7 @@
             "name": "Антонов Роман",
             "number": 6,
             "position": "ЛП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -175,7 +175,7 @@
             "name": "Томцев Алексей",
             "number": 14,
             "position": "НАП",
-            "goals": 3,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 2,
             "red_cards": 1
@@ -184,7 +184,7 @@
             "name": "Тимофеев Александр",
             "number": null,
             "position": "НАП",
-            "goals": 2,
+            "goals": 4,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -194,6 +194,15 @@
             "number": 5,
             "position": "НАП",
             "goals": 0,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
+        },
+        {
+            "name": "Андреев Егор",
+            "number": null,
+            "position": null,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -931,7 +940,7 @@
             "name": "Парамонов Никита",
             "number": 7,
             "position": "ЦЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -985,7 +994,7 @@
             "name": "Строганов Никита",
             "number": 16,
             "position": "ПЗ",
-            "goals": 3,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0

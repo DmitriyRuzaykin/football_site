@@ -2533,6 +2533,65 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Параты",
+            "date": "02.08.2025",
+            "round": 14,
+            "score": "3:5",
+            "goals": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Андреев Егор",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Тимофеев Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Тимофеев Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Парамонов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Антонов Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Томцев Алексей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
