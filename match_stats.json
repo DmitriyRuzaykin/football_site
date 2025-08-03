@@ -2592,6 +2592,29 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Карамассы",
+            "date": "02.08.2025",
+            "round": 14,
+            "score": "0:2",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Петров Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
