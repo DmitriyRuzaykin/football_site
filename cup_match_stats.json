@@ -271,6 +271,26 @@
                 {"team": "ФК Эмеково", "player": "Архипов Павел", "minute": null}
             ],
             "red_cards": []
+        },
+        {
+            "stage": "Финал",
+            "home_team": "ФК Параты",
+            "away_team": "ФК Петьял",
+            "date": "06.08.2025",
+            "score": "2:0",
+            "goals": [
+                {"team": "ФК Параты", "player": "Кабышев Максим", "minute": 35},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": 65}
+            ],
+            "yellow_cards": [
+                {"team": "ФК Петьял", "player": "Васильев Максим", "minute": null},
+                {"team": "ФК Петьял", "player": "Власов Стас", "minute": null},
+                {"team": "ФК Петьял", "player": "Тарасов Алексей", "minute": null},
+                {"team": "ФК Параты", "player": "Максютов Максим", "minute": null},
+                {"team": "ФК Параты", "player": "Ильин Станислав", "minute": null},
+                {"team": "ФК Параты", "player": "Рузайкин Кирилл", "minute": null}
+            ],
+            "red_cards": []
         }
     ]
 }
