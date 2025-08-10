@@ -2711,6 +2711,77 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Часовенная",
+            "date": "09.08.2025",
+            "round": 15,
+            "score": "8:2",
+            "goals": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Романов Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
