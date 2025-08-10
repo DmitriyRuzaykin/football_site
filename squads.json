@@ -304,7 +304,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 10,
+            "goals": 15,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -340,7 +340,7 @@
             "name": "Шашков Артём",
             "number": 9,
             "position": "ЛП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -349,7 +349,7 @@
             "name": "Митрофанов Михаил",
             "number": 17,
             "position": "ЛП",
-            "goals": 7,
+            "goals": 9,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -549,7 +549,7 @@
             "name": "Максимов Матвей",
             "number": 26,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -594,7 +594,7 @@
             "name": "Власов Станислав",
             "number": 7,
             "position": "ЦАП",
-            "goals": 4,
+            "goals": 5,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
