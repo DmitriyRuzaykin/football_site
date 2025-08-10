@@ -2669,6 +2669,48 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Параты",
+            "away_team": "ФК Ярамор",
+            "date": "09.08.2025",
+            "round": 15,
+            "score": "1:1",
+            "goals": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Стас",
+                    "minute": 25,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": 75,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Атлашкин Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
