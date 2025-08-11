@@ -2256,6 +2256,35 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Петьял",
+            "away_team": "ФК Часовенная",
+            "date": "19.07.2025",
+            "round": 12,
+            "score": "3:0 ТП",
+            "goals": [
+                {
+                    "team": "ФК Петьял",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": null,
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Карамассы",
             "away_team": "ФК Приволжск",
             "date": "19.07.2025",
