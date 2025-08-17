@@ -2936,6 +2936,48 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Петьял",
+            "date": "16.08.2025",
+            "round": 16,
+            "score": "4:0",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": "3",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Усков Леонид",
+                    "minute": "34",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": "70",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Васильев Владимир",
+                    "minute": "90+",
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Тараканов Максим",
+                    "minute": "45+",
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
