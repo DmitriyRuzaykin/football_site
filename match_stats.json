@@ -3044,6 +3044,35 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Карамассы",
+            "date": "16.08.2025",
+            "round": 16,
+            "score": "0:3",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Кудряшов Дмитрий",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Петров Роман",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
