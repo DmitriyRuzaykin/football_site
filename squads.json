@@ -225,7 +225,7 @@
             "position": "Врт",
             "goals": 0,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -295,7 +295,7 @@
             "name": "Степанов Дмитрий",
             "number": 14,
             "position": "ПЗ",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -304,7 +304,7 @@
             "name": "Ильин Илья",
             "number": 56,
             "position": "ЦП",
-            "goals": 15,
+            "goals": 18,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -324,7 +324,7 @@
             "position": "ЦП",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -376,7 +376,7 @@
             "name": "Марков Роман",
             "number": 11,
             "position": "ПП",
-            "goals": 1,
+            "goals": 3,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1810,7 +1810,7 @@
             "name": "Мшаров Стас",
             "number": 7,
             "position": "НАП",
-            "goals": 8,
+            "goals": 9,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0

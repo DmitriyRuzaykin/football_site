@@ -2978,6 +2978,72 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Помары",
+            "away_team": "ФК Сотнур",
+            "date": "16.08.2025",
+            "round": 16,
+            "score": "6:1",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Степанов Дмитрий",
+                    "minute": "11",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": "12",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Станислав",
+                    "minute": "37",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Марков Роман",
+                    "minute": "52",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": "53",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": "67",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Марков Роман",
+                    "minute": "76",
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Степанов Александр",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Васильев Андрей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
