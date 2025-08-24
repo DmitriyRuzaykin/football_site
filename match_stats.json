@@ -3179,6 +3179,72 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Помары",
+            "date": "23.08.2025",
+            "round": 17,
+            "score": "1:7",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Вячеслав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Вячеслав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Павел",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Решетников Андрей",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Решетников Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Михайлов Максим",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Шабалин Артур",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }

@@ -313,7 +313,7 @@
             "name": "Ильин Вячеслав",
             "number": null,
             "position": null,
-            "goals": 0,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
@@ -385,7 +385,7 @@
             "name": "Решетников Андрей",
             "number": 8,
             "position": "ПП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -394,7 +394,7 @@
             "name": "Иванов Константин",
             "number": 25,
             "position": "НАП",
-            "goals": 10,
+            "goals": 12,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -403,12 +403,21 @@
             "name": "Иванов Павел",
             "number": 27,
             "position": "НАП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 1,
             "red_cards": 0
+        },
+        {
+            "name": "Решетников Илья",
+            "number": null,
+            "position": null,
+            "goals": 1,
+            "assists": 0,
+            "yellow_cards": 0,
+            "red_cards": 0
         }
-        ],
+    ],
     "ФК Петьял": [
         {
             "name": "Максимов Андрей",
@@ -1086,7 +1095,7 @@
             "position": "НАП",
             "goals": 3,
             "assists": 0,
-            "yellow_cards": 2,
+            "yellow_cards": 3,
             "red_cards": 0
         },
         {
@@ -1129,7 +1138,7 @@
             "name": "Михайлов Максим",
             "number": 11,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
