@@ -803,7 +803,7 @@
             "name": "Прокофьев Павел",
             "number": 10,
             "position": "ЦП",
-            "goals": 1,
+            "goals": 2,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -868,7 +868,7 @@
             "position": "НАП",
             "goals": 1,
             "assists": 0,
-            "yellow_cards": 0,
+            "yellow_cards": 1,
             "red_cards": 0
         },
         {
@@ -884,7 +884,7 @@
             "name": "Иванов Дамир",
             "number": 14,
             "position": "НАП",
-            "goals": 0,
+            "goals": 1,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0
@@ -1819,7 +1819,7 @@
             "name": "Мшаров Стас",
             "number": 7,
             "position": "НАП",
-            "goals": 9,
+            "goals": 11,
             "assists": 0,
             "yellow_cards": 0,
             "red_cards": 0

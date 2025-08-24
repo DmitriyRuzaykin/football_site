@@ -3245,6 +3245,48 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Сотнур",
+            "date": "23.08.2025",
+            "round": 17,
+            "score": "2:2",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Иванов Дамир",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Прокопьев Павел",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Сотнур",
+                    "player": "Мшаров Стас",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Корнилов Матвей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
