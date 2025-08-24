@@ -3126,6 +3126,59 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Петьял",
+            "date": "23.08.2025",
+            "round": 17,
+            "score": "5:2",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Макаров Семен",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Макаров Семен",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Тимофеев Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Власов Максим",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Петьял",
+                    "player": "Еремин Руслан",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
