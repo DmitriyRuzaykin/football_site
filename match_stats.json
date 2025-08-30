@@ -3376,6 +3376,41 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Ярамор",
+            "away_team": "ФК Сотнур",
+            "date": "30.08.2025",
+            "round": 18,
+            "score": "4:0",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Егоров Данил",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
