@@ -3287,6 +3287,42 @@
                 }
             ],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Петьял",
+            "date": "30.08.2025",
+            "round": 18,
+            "score": "3:0",
+            "goals": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Семенов Даниил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Петров Роман",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Смирнов Валера",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Смирнов Валера",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
         }
     ]
 }
