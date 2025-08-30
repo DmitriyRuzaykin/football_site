@@ -3411,6 +3411,77 @@
             ],
             "yellow_cards": [],
             "red_cards": []
+        },
+        {
+            "home_team": "ФК Часовенная",
+            "away_team": "ФК Эмеково",
+            "date": "30.08.2025",
+            "round": 18,
+            "score": "4:7",
+            "goals": [
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Кукушкин Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Караев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Иванов Дамир",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Строганов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Часовенная",
+                    "player": "Бычков Дмитрий",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
         }
     ]
 }
