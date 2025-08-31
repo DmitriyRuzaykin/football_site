@@ -254,20 +254,20 @@ with tab1:  # Чемпионат
         else:
             st.info("В выбранном туре нет сыгранных матчей для отображения статистики")
 
-    st.subheader("🗓 Календарь игр (по турам)")
-    df_schedule["Дата"] = pd.to_datetime(df_schedule["Дата"].astype(str) + ".2025", format="%d.%m.%Y", errors="coerce")
-    df_schedule["Дата"] = df_schedule["Дата"].dt.strftime("%d.%m.%Y")
-    today = pd.to_datetime(datetime.now().date())
-    future_rounds = pd.to_datetime(df_schedule["Дата"], format="%d.%m.%Y", errors="coerce")
-    default_round = df_schedule.loc[future_rounds >= today, "Тур"].min() if not future_rounds.empty else df_schedule[
-        "Тур"].max()
-    selected_schedule_round = st.selectbox(
-        "Выберите тур для просмотра календаря",
-        sorted(df_schedule["Тур"].unique()),
-        index=list(sorted(df_schedule["Тур"].unique())).index(default_round),
-        key="schedule"
-    )
-    st.dataframe(df_schedule[df_schedule["Тур"] == selected_schedule_round], use_container_width=True)
+    # st.subheader("🗓 Календарь игр (по турам)")
+    # df_schedule["Дата"] = pd.to_datetime(df_schedule["Дата"].astype(str) + ".2025", format="%d.%m.%Y", errors="coerce")
+    # df_schedule["Дата"] = df_schedule["Дата"].dt.strftime("%d.%m.%Y")
+    # today = pd.to_datetime(datetime.now().date())
+    # future_rounds = pd.to_datetime(df_schedule["Дата"], format="%d.%m.%Y", errors="coerce")
+    # default_round = df_schedule.loc[future_rounds >= today, "Тур"].min() if not future_rounds.empty else df_schedule[
+    #     "Тур"].max()
+    # selected_schedule_round = st.selectbox(
+    #     "Выберите тур для просмотра календаря",
+    #     sorted(df_schedule["Тур"].unique()),
+    #     index=list(sorted(df_schedule["Тур"].unique())).index(default_round),
+    #     key="schedule"
+    # )
+    # st.dataframe(df_schedule[df_schedule["Тур"] == selected_schedule_round], use_container_width=True)
 
 with tab2:  # Кубок
     st.title("🥇 Кубок Волжского района по футболу 2025 года")
