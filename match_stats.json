@@ -2693,6 +2693,66 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Ярамор",
+            "date": "02.08.2025",
+            "round": 14,
+            "score": "1:3",
+            "goals": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Тимофеев Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Эмеково",
+                    "player": "Прокофьев Павел",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Тимофеев Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Харитонов Николай",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Кошаев Данил",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Ярамор",
+                    "player": "Избанов Андрей",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Сотнур",
             "away_team": "ФК Приволжск",
             "date": "02.08.2025",
