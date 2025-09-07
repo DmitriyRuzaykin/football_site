@@ -926,6 +926,53 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Карамассы",
+            "away_team": "ФК Помары",
+            "date": "31.05.2025",
+            "round": 5,
+            "score": "2:4",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Ильин Илья",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Иванов Константин",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Ильин Роберт",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Карамассы",
+                    "player": "Петров Роман",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Эмеково",
             "away_team": "ФК Параты",
             "date": "08.06.2025",
