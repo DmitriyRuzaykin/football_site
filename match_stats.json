@@ -3045,6 +3045,96 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Приволжск",
+            "away_team": "ФК Параты",
+            "date": "16.08.2025",
+            "round": 16,
+            "score": "3:9",
+            "goals": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Кирилл",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Иванов Никита",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Мокин Артем",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Ильин Станислав",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Андреев Егор",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [
+                {
+                    "team": "ФК Приволжск",
+                    "player": "Петров Александр",
+                    "minute": null,
+                    "assist": null
+                }
+            ],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Эмеково",
             "away_team": "ФК Петьял",
             "date": "16.08.2025",
