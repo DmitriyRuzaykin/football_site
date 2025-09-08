@@ -3130,9 +3130,28 @@
                     "player": "Петров Александр",
                     "minute": null,
                     "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                },
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
                 }
             ],
-            "red_cards": []
+            "red_cards": [
+                {
+                    "team": "ФК Параты",
+                    "player": "Муравьев Радик",
+                    "minute": null,
+                    "assist": null
+                }
+            ]
         },
         {
             "home_team": "ФК Эмеково",
