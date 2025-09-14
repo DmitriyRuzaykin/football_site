@@ -2332,6 +2332,29 @@
             "red_cards": []
         },
         {
+            "home_team": "ФК Эмеково",
+            "away_team": "ФК Помраы",
+            "date": "19.07.2025",
+            "round": 12,
+            "score": "0:2",
+            "goals": [
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": "55",
+                    "assist": null
+                },
+                {
+                    "team": "ФК Помары",
+                    "player": "Митрофанов Михаил",
+                    "minute": "90+3",
+                    "assist": null
+                }
+            ],
+            "yellow_cards": [],
+            "red_cards": []
+        },
+        {
             "home_team": "ФК Карамассы",
             "away_team": "ФК Приволжск",
             "date": "19.07.2025",
